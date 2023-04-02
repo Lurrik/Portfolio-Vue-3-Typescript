@@ -1,5 +1,5 @@
 <template>
-  <h2 class="section-home-welcome-text" :class="textWelcome">
+  <h2 class="section-home-welcome-text" :class="textH">
     <p>Hello,</p>
     <p>
       je suis
@@ -23,6 +23,7 @@ import { useQuasar } from 'quasar';
 import { computed } from 'vue';
 import { Typed } from '@duskmoon/vue3-typed-js';
 import type { TypedOptions } from '@duskmoon/vue3-typed-js';
+
 const $q = useQuasar();
 
 const options: TypedOptions = {
@@ -31,7 +32,7 @@ const options: TypedOptions = {
   typeSpeed: 100,
 };
 
-const textWelcome = computed(() => {
+const textH = computed(() => {
   return {
     'text-h5': $q.screen.xs,
     'text-h4': $q.screen.sm,

@@ -1,5 +1,5 @@
 <template>
-  <div class="section-home-welcome q-px-lg">
+  <div class="section-home-welcome q-px-xl q-pb-xl">
     <section-home-welcome-text />
     <section-home-welcome-link />
   </div>
