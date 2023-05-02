@@ -10,8 +10,8 @@
   >
     <q-tab name="home" icon="fa-solid fa-house-user" label="Accueil" />
     <q-tab name="about" icon="fa-solid fa-user-astronaut" label="À propos de moi" />
-    <q-tab name="Skills" icon="fa-solid fa-code" label="Compétences" />
-    <q-tab name="xp" icon="fa-solid fa-timeline" label="Expériences" />
+    <q-tab name="skills" icon="fa-solid fa-code" label="Expertises" />
+    <q-tab name="experience" icon="fa-solid fa-timeline" label="Expériences" />
     <q-tab name="projects" icon="fa-solid fa-list-check" label="Projets" />
     <q-tab name="contact" icon="fa-solid fa-envelope" label="Contact" />
   </q-tabs>

@@ -2,7 +2,7 @@
   <q-layout class="portfolio" view="lHh Lpr lFf">
     <the-header />
 
-    <q-page-container>
+    <q-page-container class="page-container">
       <router-view />
     </q-page-container>
   </q-layout>
@@ -18,6 +18,10 @@ import TheHeader from '@/layouts/theHeader/TheHeader.vue';
     &.dark-mode {
       background-color: var(--q-dark-page);
     }
+  }
+
+  .page-container {
+    overflow-x: hidden;
   }
 }
 </style>

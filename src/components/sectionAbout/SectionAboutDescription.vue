@@ -1,12 +1,13 @@
 <template>
   <div class="text-body1 q-pa-xl">
     <h3 :class="textH">
-      <strong class="text-primary">Qui je suis ?</strong>
+      <strong class="text-primary">À propos de moi</strong>
       <q-separator class="q-my-md" inset />
     </h3>
     <p>
       Je suis Erick Golos, un développeur full stack avec une expertise
-      <b>front-end</b>. Je suis passionné avec plusieurs années d'expérience dans la création de sites Web et d'applications interactives. Ma spécialité est de concevoir des interfaces utilisateur attrayantes et conviviales, en utilisant des technologies modernes telles que HTML, CSS, JavaScript, Typescript et spécialisé sur le framework Vue.
+      <b>front-end</b>. Je suis un développeur passionné avec plusieurs années d'expérience dans la création de sites Web et d'applications interactives. Ma spécialité est de concevoir des interfaces utilisateur attrayantes et conviviales, en utilisant des technologies modernes telles que HTML, CSS, JavaScript, Typescript et le framework Vue
+      <b>(Vue 2 et Vue 3)</b>.
     </p>
     <p>
       J'apprécie énormément le fait que le développement d'applications soit un domaine en constante évolution. Les nouvelles technologies et les nouvelles pratiques émergent constamment, ce qui signifie qu'il y a toujours quelque chose de nouveau à apprendre et à découvrir. Je suis toujours à l'affût des dernières tendances et je n'hésite pas à expérimenter de nouvelles approches pour améliorer mes compétences.

@@ -2,12 +2,15 @@
   <q-page>
     <section-home id="home" />
     <section-about id="about" />
+    <section-skills id="skills" />
   </q-page>
 </template>
 
 <script setup lang="ts">
 import SectionHome from '@/components/sectionHome/SectionHome.vue';
 import SectionAbout from '@/components/sectionAbout/SectionAbout.vue';
+import SectionSkills from '@/components/sectionSkills/SectionSkills.vue';
+
 import { watch } from 'vue';
 import { scroll } from 'quasar';
 
