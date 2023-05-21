@@ -27,7 +27,7 @@ import type { TypedOptions } from '@duskmoon/vue3-typed-js';
 const $q = useQuasar();
 
 const options: TypedOptions = {
-  strings: ['software engineer', 'full stack', 'passionné'],
+  strings: ['ingénieur', 'full stack', 'passionné'],
   loop: true,
   typeSpeed: 100,
 };

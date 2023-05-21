@@ -1,11 +1,12 @@
 <template>
   <q-header class="q-px-xl" :class="classHeaderDark">
     <q-toolbar>
-      <a class="row no-wrap text-h6" :class="classTextDark">
+      <q-icon :name="`img:${logo}`" size="lg"></q-icon>
+      <!-- <a class="row no-wrap text-h6" :class="classTextDark">
         <strong class="text-primary">&lt; &nbsp;</strong>
         <strong class="no-wrap">Erick Golos</strong>
         <strong class="text-primary">&nbsp;/></strong>
-      </a>
+      </a>-->
       <q-space />
       <the-header-navigation :class="classTextDark" />
       <q-toggle
@@ -35,6 +36,10 @@ const classHeaderDark = computed(() => {
 
 const classTextDark = computed(() => {
   return $q.dark.isActive ? 'text-white' : 'text-black';
+});
+
+const logo = computed(() => {
+  return new URL('/src/assets/logo.svg', import.meta.url).href;
 });
 
 let DarkMode = computed({

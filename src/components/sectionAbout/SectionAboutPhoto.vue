@@ -9,19 +9,11 @@
 </template>
 
 <script setup lang="ts">
-const pictureProfil: URL = new URL('/src/assets/photo2.png', import.meta.url);
-
-const backgroundProfil: URL = new URL(
-  '/src/assets/mountain.jpg',
-  import.meta.url
-);
+import pictureProfil from '@/assets/general/photo2.png';
+import backgroundProfil from '@/assets/general/mountain.jpg';
 </script>
 
 <style lang="scss">
-.q-parallax__media {
-  bottom: 200px;
-}
-
 .photo-about {
   height: 80vh;
   max-width: 450px;

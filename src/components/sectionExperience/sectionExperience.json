@@ -1,0 +1,25 @@
+{
+  "experiences": [
+    {
+      "id": "neoledge",
+      "name": "Software engineer",
+      "startDate": "Sept. 2021",
+      "endDate": "Aujourd'hui",
+      "location": {
+        "name": "Lille, France",
+        "url": ""
+      },
+      "srcLogo": "neoledge",
+      "link": {
+        "name": "neoledge.com",
+        "url": "https://www.neoledge.com/"
+      },
+      "descriptions": [
+        {
+          "title": "Développement",
+          "tasks": []
+        }
+      ]
+    }
+  ]
+}

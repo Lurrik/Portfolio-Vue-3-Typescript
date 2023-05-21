@@ -1,13 +1,13 @@
 <template>
   <div class="section-about row flex flex-center">
     <div class="col-xs-12 col-md-7 flex flex-center">
-      <section-about-description />
+      <section-about-description v-motion-slide-visible-left />
     </div>
     <div
       class="col-xs-12 col-md-5 flex flex-center"
       :style="{ backgroundImage: `url(${backgroundImageProfil})` }"
     >
-      <section-about-photo />
+      <section-about-photo v-motion-slide-visible-right />
     </div>
   </div>
 </template>

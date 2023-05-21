@@ -38,11 +38,11 @@ useMotion(homeWelcome, {
   },
 });
 
-const backgroundImageProfil: URL = new URL(
+const backgroundImageProfil = new URL(
   'http://www.ivang-design.com/svg-load/parallax/parallax-01.png',
   import.meta.url
 );
-const backgroundImageProfil2: URL = new URL(
+const backgroundImageProfil2 = new URL(
   'http://www.ivang-design.com/svg-load/parallax/parallax-0.png',
   import.meta.url
 );

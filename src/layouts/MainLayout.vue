@@ -21,7 +21,7 @@ import TheHeader from '@/layouts/theHeader/TheHeader.vue';
   }
 
   .page-container {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 </style>

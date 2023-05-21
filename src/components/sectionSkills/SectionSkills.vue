@@ -1,5 +1,5 @@
 <template>
-  <div class="section-skills q-px-xl">
+  <div class="section-skills q-px-lg">
     <div class="flex column no-wrap">
       <h3 class="q-mt-xl q-mb-md">
         <strong class="text-primary">Expertises</strong>
@@ -83,7 +83,7 @@ const skills = ref([
       },
       {
         label: 'VueUse',
-        picture: 'vueUse',
+        picture: 'vueuse',
       },
       {
         label: 'Sass',

@@ -9,14 +9,13 @@
 </template>
 
 <script setup lang="ts">
-const pictureProfil: URL = new URL('/src/assets/photo.png', import.meta.url);
-const backgroundProfil: URL = new URL(
-  '/src/assets/mountain.jpg',
-  import.meta.url
-);
+import pictureProfil from '@/assets/general/photo.png';
+import backgroundProfil from '@/assets/general/mountain.jpg';
 </script>
 
 <style lang="scss">
+@use '@/css/quasar.variables.scss';
+
 .picture-profil {
   width: 30vh;
   height: 30vh !important;
@@ -36,10 +35,10 @@ const backgroundProfil: URL = new URL(
   }
 
   &.border-primary {
-    border: solid 2px #9f7e5a;
+    border: solid 2px $primary;
 
     @media (min-width: $breakpoint-sm-min) {
-      border: solid 10px #9f7e5a;
+      border: solid 10px $primary;
     }
   }
 }

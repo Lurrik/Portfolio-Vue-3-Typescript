@@ -2,10 +2,12 @@
   "name": "portfolio",
   "version": "0.0.1",
   "description": "Mon portfolio",
-  "productName": "portfolio",
+  "productName": "Erick Golos - Portfolio",
   "author": "Erick Golos <45265019+Lurrik@users.noreply.github.com>",
   "private": true,
   "scripts": {
+    "dev": "npx quasar dev",
+    "build": "npx quasar build",
     "lint": "eslint --ext .js,.ts,.vue ./",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0"

@@ -36,7 +36,7 @@ const props = defineProps({
 });
 
 function skillPicture(picture) {
-  return new URL(`/src/assets/skills/${picture}.png`, import.meta.url);
+  return new URL(`/src/assets/skills/${picture}.png`, import.meta.url).href;
 }
 </script>
 
