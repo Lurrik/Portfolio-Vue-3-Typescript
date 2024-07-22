@@ -59,16 +59,16 @@ Using NPM: Simply run the below commands.
 # Install dependencies
 $ npm install
 
-# Start the development server (pwa)
-$ npm run pwa
-
 # Start the development server (spa)
 $ npm run dev
 
-### Build the app for production (pwa)
-$ npm run build
+# Start the development server (pwa)
+$ npm run pwa
 
 ### Build the app for production (spa)
+$ npm run build
+
+### Build the app for production (pwa)
 $ npm run build-pwa
 
 ```
