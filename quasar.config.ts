@@ -122,18 +122,6 @@ export default configure((ctx) => {
           outDir: './dist/pwa', // change this according to your build mode
           dynamicRoutes: ['/', '/skills', '/projects'],
         }),
-        [
-          'vite-plugin-checker',
-          {
-            vueTsc: {
-              tsconfigPath: 'tsconfig.vue-tsc.json',
-            },
-            eslint: {
-              lintCommand: 'eslint "./**/*.{js,ts,mjs,cjs,vue}"',
-            },
-          },
-          { server: false },
-        ],
       ],
     },
 

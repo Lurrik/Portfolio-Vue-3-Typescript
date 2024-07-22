@@ -6,8 +6,8 @@
 </template>
 
 <script setup>
-import BackgroundGradientLeft from '@/components/backgroundGradient/backgroundGradientLeft.vue';
-import BackgroundGradientRight from '@/components/backgroundGradient/backgroundGradientRight.vue';
+import BackgroundGradientLeft from '@/components/backgroundGradient/BackgroundGradientLeft.vue';
+import BackgroundGradientRight from '@/components/backgroundGradient/BackgroundGradientRight.vue';
 </script>
 
 <style lang="scss">

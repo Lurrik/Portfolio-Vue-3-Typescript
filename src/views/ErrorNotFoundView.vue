@@ -1,7 +1,9 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
+  <div class="fullscreen text-white text-center q-pa-md flex flex-center">
+    <BackgroundGradient />
+
     <div>
-      <div style="font-size: 30vh">
+      <div class="text-primary" style="font-size: 30vh">
         404
       </div>
 
@@ -11,8 +13,7 @@
 
       <q-btn
         class="q-mt-xl"
-        color="white"
-        text-color="blue"
+        color="primary"
         unelevated
         to="/"
         label="Go Home"
@@ -23,5 +24,5 @@
 </template>
 
 <script setup lang="ts">
-
+import BackgroundGradient from '@/components/backgroundGradient/BackgroundGradient.vue';
 </script>
