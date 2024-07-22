@@ -1,12 +1,8 @@
 <template>
-  <q-card
-    v-if="skill"
-    v-motion-slide-visible-left
-    class="section-skills-card row rounded-borders q-ma-md"
-  >
+  <q-card v-if="skill" class="section-skills-card row rounded-borders q-ma-md">
     <div class="full-width">
       <q-card-section class="text-center">
-        <div class="text-h6">{{skill.label}}</div>
+        <div class="text-h6">{{ skill.label }}</div>
       </q-card-section>
       <div class="q-pb-md flex flex-center">
         <q-separator class="separator" color="primary" inset />
@@ -17,8 +13,13 @@
           :key="index"
           class="col-xs-6 col-md-2 flex column items-center"
         >
-          <q-img class="skill-picture" round contain :src="skillPicture(tool.picture)" />
-          <p class="text-center">{{tool.label}}</p>
+          <q-img
+            class="skill-picture"
+            round
+            contain
+            :src="skillPicture(tool.picture)"
+          />
+          <p class="text-center">{{ tool.label }}</p>
         </div>
       </div>
       <div class="bg-primary full-width height-5"></div>
@@ -27,8 +28,7 @@
 </template>
 
 <script setup>
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const props = defineProps({
+defineProps({
   skill: {
     type: Object,
     default: undefined,
@@ -36,7 +36,7 @@ const props = defineProps({
 });
 
 function skillPicture(picture) {
-  return new URL(`/src/assets/skills/${picture}.png`, import.meta.url).href;
+  return `https://erickgolos.com/images/skills/${picture}.png`;
 }
 </script>
 

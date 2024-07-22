@@ -1,1 +1,131 @@
 // app global css in SCSS form
+:root {
+  --q-gradient-ellispse-left: #0ebbd2;
+  --q-gradient-circle-right: #02faaf;
+  --q-gradient-ellispse-1-right: #00c2ff;
+  --q-gradient-ellispse-2-right: #0ebbd2;
+}
+
+.small-screen-only {
+  @media (min-width: $breakpoint-md-min) {
+    display: none;
+  }
+}
+
+.large-screen-only {
+  @media (max-width: $breakpoint-sm-max) {
+    display: none;
+  }
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+h3 {
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: $breakpoint-sm-min) {
+  h3 {
+    font-size: 1.5em;
+    line-height: 0.5rem;
+  }
+}
+@media (min-width: $breakpoint-sm-min) {
+  h3 {
+    font-size: 2em;
+  }
+}
+@media (min-width: $breakpoint-md-min) {
+  h3 {
+    font-size: 2em;
+  }
+}
+@media (min-width: $breakpoint-lg-min) {
+  h3 {
+    font-size: 3em;
+  }
+}
+@media (min-width: $breakpoint-xl-min) {
+  h3 {
+    font-size: 4em;
+  }
+}
+
+.text-h4,
+h4 {
+  line-height: 1.125rem;
+  font-weight: 500;
+}
+
+@media (max-width: $breakpoint-sm-min) {
+  .text-h4,
+  h4 {
+    font-size: 1.125rem;
+    line-height: 0.5rem;
+  }
+}
+@media (min-width: $breakpoint-sm-min) {
+  .text-h4,
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: $breakpoint-md-min) {
+  .text-h4,
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: $breakpoint-lg-min) {
+  .text-h4,
+  h4 {
+    font-size: 2.125rem;
+  }
+}
+@media (min-width: $breakpoint-xl-min) {
+  .text-h4,
+  h4 {
+    font-size: 2.125rem;
+  }
+}
+
+.text-h6,
+h6 {
+  line-height: 0.25rem;
+  font-weight: 500;
+}
+
+@media (max-width: $breakpoint-sm-min) {
+  .text-h6,
+  h6 {
+    font-size: 0.75rem;
+    line-height: 0.25rem;
+  }
+}
+@media (min-width: $breakpoint-sm-min) {
+  .text-h6,
+  h6 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: $breakpoint-md-min) {
+  .text-h6,
+  h6 {
+    font-size: 1rem;
+  }
+}
+@media (min-width: $breakpoint-lg-min) {
+  .text-h6,
+  h6 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: $breakpoint-xl-min) {
+  .text-h6,
+  h6 {
+    font-size: 1.25rem;
+  }
+}

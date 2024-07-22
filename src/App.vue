@@ -5,7 +5,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue';
 import { Dark } from 'quasar';
-import { useSettingsStore } from '@/stores/useSettingsStore';
+import { useSettingsStore } from 'stores/useSettingsStore';
 
 const settingsStore = useSettingsStore();
 

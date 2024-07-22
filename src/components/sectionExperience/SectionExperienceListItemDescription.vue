@@ -15,8 +15,7 @@
 </template>
 
 <script setup lang="ts">
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const props = defineProps({
+defineProps({
   descriptions: {
     type: Object,
     required: true,

@@ -1,20 +1,27 @@
 <template>
-  <div class="section-skills q-px-lg">
-    <div class="flex column no-wrap">
-      <h3 class="q-mt-xl q-mb-md">
-        <strong class="text-primary">Expertises</strong>
-      </h3>
-      <span class="text-grey text-subtitle1">Liste des outils de développement</span>
-      <q-separator class="q-my-md" inset />
-    </div>
-    <div class="row full-width">
-      <div
-        v-for="(skill, index) in skills"
-        :key="index"
-        :data-id="index"
-        class="col-xs-12 col-md-6"
-      >
-        <section-skills-card :skill="skill" />
+  <div class="section-skills flex justify-center">
+    <div class="col-8 column">
+      <div class="text-center flex column no-wrap">
+        <h3 class="q-mb-md text-primary">Expertises</h3>
+        <span class="text-grey text-subtitle1">
+          Liste des outils de développement
+        </span>
+        <q-separator class="q-my-md" inset />
+      </div>
+      <div class="list row justify-center q-pb-xl">
+        <div
+          v-for="(skill, index) in skills"
+          :key="index"
+          :data-id="index"
+          class="col-xs-12 col-md-6"
+        >
+          <section-skills-card
+            v-if="!noAnimation"
+            v-motion-slide-visible-left
+            :skill="skill"
+          />
+          <section-skills-card v-else :skill="skill" />
+        </div>
       </div>
     </div>
   </div>
@@ -23,6 +30,13 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import SectionSkillsCard from '@/components/sectionSkills/SectionSkillsCard.vue';
+
+defineProps({
+  noAnimation: {
+    type: Boolean,
+    default: false,
+  },
+});
 
 const skills = ref([
   {
@@ -132,7 +146,7 @@ const skills = ref([
     visible: false,
     tools: [
       {
-        label: 'Visual studio code',
+        label: 'VS Code',
         picture: 'visualStudioCode',
       },
       {
@@ -158,12 +172,12 @@ const skills = ref([
 
 <style lang="scss">
 .section-skills {
-  @media (min-width: $breakpoint-sm-min) {
-    height: auto;
-  }
+  .col-8 {
+    width: 80%;
 
-  @media (min-width: $breakpoint-md-min) {
-    height: calc(100vh - 50px) !important;
+    @media (max-width: $breakpoint-md-min) {
+      width: 90%;
+    }
   }
 }
 </style>

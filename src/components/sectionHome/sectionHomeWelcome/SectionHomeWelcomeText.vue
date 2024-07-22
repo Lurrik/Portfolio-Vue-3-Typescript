@@ -8,13 +8,15 @@
     </p>
     <p class="row items-center q-my-0">
       <Typed class="row items-center" :options="options">
-        <span>et je suis&nbsp;</span>
         <span class="typing text-primary"></span>
       </Typed>
     </p>
-    <span
-      class="row text-subtitle1 items-start"
-    >Bienvenue ! Ce portfolio est un reflet de mon travail et de mes réalisations au fil des années. Vous y trouverez des exemples de projets sur lesquels j'ai travaillé, des descriptions détaillées de mes compétences et de mes réalisations.</span>
+    <span class="row text-subtitle1 items-start"
+      >Bienvenue ! Ce portfolio est un reflet de mon travail et de mes
+      réalisations au fil des années. Vous y trouverez des exemples de projets
+      sur lesquels j'ai travaillé, des descriptions détaillées de mes
+      compétences et de mes réalisations.</span
+    >
   </h2>
 </template>
 
@@ -27,7 +29,7 @@ import type { TypedOptions } from '@duskmoon/vue3-typed-js';
 const $q = useQuasar();
 
 const options: TypedOptions = {
-  strings: ['ingénieur', 'full stack', 'passionné'],
+  strings: ['Ingénieur', 'Développeur', 'Front end', 'Passionné'],
   loop: true,
   typeSpeed: 100,
 };
@@ -41,5 +43,3 @@ const textH = computed(() => {
   };
 });
 </script>
-
-

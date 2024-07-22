@@ -1,14 +1,11 @@
 <template>
-  <q-header class="q-px-xl" :class="classHeaderDark">
+  <q-header class="q-px-sm-xl" :class="classHeaderDark">
     <q-toolbar>
-      <q-icon :name="`img:${logo}`" size="lg"></q-icon>
-      <!-- <a class="row no-wrap text-h6" :class="classTextDark">
-        <strong class="text-primary">&lt; &nbsp;</strong>
-        <strong class="no-wrap">Erick Golos</strong>
-        <strong class="text-primary">&nbsp;/></strong>
-      </a>-->
+      <router-link class="row" :to="{ name: 'home' }">
+        <the-header-logo />
+      </router-link>
       <q-space />
-      <the-header-navigation :class="classTextDark" />
+      <the-header-navigation v-if="showNavigation" :class="classTextDark" />
       <q-toggle
         v-model="DarkMode"
         checked-icon="fa fa-moon"
@@ -21,14 +18,20 @@
 </template>
 
 <script setup lang="ts">
-import TheHeaderNavigation from '@/layouts/theHeader/TheHeaderNavigation.vue';
-import { computed } from 'vue';
-import { useSettingsStore } from '@/stores/useSettingsStore';
-
+import { ref, computed, watch } from 'vue';
+import { useRoute, RouterLink } from 'vue-router';
 import { useQuasar } from 'quasar';
 
-const settingsStore = useSettingsStore();
+import { useSettingsStore } from 'stores/useSettingsStore';
+
+import TheHeaderLogo from '@/layouts/theHeader/TheHeaderLogo.vue';
+import TheHeaderNavigation from '@/layouts/theHeader/TheHeaderNavigation.vue';
+
+const route = useRoute();
 const $q = useQuasar();
+const settingsStore = useSettingsStore();
+
+const showNavigation = ref<boolean>(false);
 
 const classHeaderDark = computed(() => {
   return $q.dark.isActive ? 'dark-mode' : 'bg-white';
@@ -36,10 +39,6 @@ const classHeaderDark = computed(() => {
 
 const classTextDark = computed(() => {
   return $q.dark.isActive ? 'text-white' : 'text-black';
-});
-
-const logo = computed(() => {
-  return new URL('/src/assets/logo.svg', import.meta.url).href;
 });
 
 let DarkMode = computed({
@@ -50,7 +49,22 @@ let DarkMode = computed({
     settingsStore.setDarkMode(value);
   },
 });
+
+watch(
+  route,
+  (currentRoute) => {
+    showNavigation.value = currentRoute.name === 'home';
+  },
+  {
+    immediate: true,
+  }
+);
 </script>
 
-<style>
+<style lang="scss">
+.the-header {
+  svg {
+    color: var(--q-primary);
+  }
+}
 </style>

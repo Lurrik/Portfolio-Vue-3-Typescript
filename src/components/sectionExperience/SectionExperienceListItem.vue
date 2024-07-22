@@ -2,7 +2,8 @@
   <q-expansion-item
     v-motion-slide-visible-right
     class="section-experience-list-item"
-    group="somegroup"
+    group="exp"
+    :default-opened="index === 0 && !isScreenMobile"
     popup
   >
     <template v-slot:header>
@@ -55,8 +56,12 @@ import SectionExperienceListItemDescription from '@/components/sectionExperience
 import { useQuasar } from 'quasar';
 
 const $q = useQuasar();
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const props = defineProps({
+
+defineProps({
+  index: {
+    type: Number,
+    required: true,
+  },
   experience: {
     type: Object,
     required: true,

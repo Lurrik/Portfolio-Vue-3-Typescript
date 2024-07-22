@@ -2,7 +2,7 @@
   <div class="section-experience q-px-lg">
     <div class="flex column no-wrap">
       <h3 class="q-mt-xl q-mb-md">
-        <strong class="text-primary">Expériences</strong>
+        <strong class="text-primary">Expériences (en cours)</strong>
       </h3>
       <span class="text-grey text-subtitle1">Expérience professionnel</span>
       <q-separator class="q-my-md" inset />
@@ -15,7 +15,7 @@
 import SectionExperienceList from '@/components/sectionExperience/SectionExperienceList.vue';
 </script>
 
-  <style lang="scss">
+<style lang="scss">
 .section-experience {
   @media (min-width: $breakpoint-sm-min) {
     height: auto;

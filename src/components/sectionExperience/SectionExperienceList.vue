@@ -4,6 +4,7 @@
       <section-experience-list-item
         v-for="(experience, index) in json.experiences"
         :key="index"
+        :index="index"
         :experience="experience"
       />
     </q-list>
