@@ -1,26 +1,17 @@
 <template>
   <div class="fullscreen text-white text-center q-pa-md flex flex-center">
-    <BackgroundGradient />
-
+    <BackgroundGradientCenter
+      class="absolute-full full-width full-height flex flex-center"
+    />
     <div>
-      <div class="text-primary" style="font-size: 30vh">404</div>
-
-      <div class="text-h2" style="opacity: 0.4">Oops. Nothing here...</div>
-
-      <q-btn
-        class="q-mt-xl"
-        color="primary"
-        unelevated
-        to="/"
-        label="Go Home"
-        no-caps
-      />
+      <q-spinner-rings color="primary" size="200px" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import BackgroundGradient from '@/components/backgroundGradient/BackgroundGradient.vue';
+import BackgroundGradientCenter from '@/components/backgroundGradient/BackgroundGradientCenter.vue';
+
 import { useRouter } from 'vue-router';
 import { useProjectsStore } from 'stores/useProjectsStore';
 import { Project } from 'src/models/interfaces/projects';
@@ -38,7 +29,7 @@ async function generateRoute() {
   });
 }
 
-async function setupRoutes(): Promise<void> {
+async function setupRoutes() {
   const projectStore = useProjectsStore();
   await projectStore.getProjects();
   generateRoute();

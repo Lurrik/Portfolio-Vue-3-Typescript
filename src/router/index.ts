@@ -30,6 +30,7 @@ export default route(function (/* { store, ssrContext } */) {
         return {
           el: to.hash,
           behavior: 'smooth',
+          top: 100,
         };
       } else {
         return { left: 0, top: 0 };

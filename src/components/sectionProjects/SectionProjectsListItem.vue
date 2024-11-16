@@ -6,7 +6,7 @@
       class="section-project-list-item col-lg-5 col-md-5 col-sm-5 col-xs-10"
       @click="navigate(name)"
     >
-      <q-img class="project-image" :src="projectPicture(name)" />
+      <q-img class="project-image" :src="projectPicture(name)" fit="fill" />
       <q-card-section>
         <div class="text-h6 q-my-md">{{ label }}</div>
         <div class="text-subtitle2">{{ category }}</div>
@@ -34,8 +34,9 @@ const emit = defineEmits<{
 
 const router = useRouter();
 
-function projectPicture(name: string | undefined) {
+function projectPicture(name: string | undefined): string {
   if (!name) return '';
+
   return `https://erickgolos.com/images/projects/${name}.png`;
 }
 
@@ -47,6 +48,7 @@ function navigate(name: string) {
 
 <style lang="scss" scoped>
 .section-project-list-item {
+  max-width: 400px;
   cursor: pointer;
   transition: transform 0.2s;
 

@@ -25,14 +25,33 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
+import { useRouter } from 'vue-router';
 import { useQuasar } from 'quasar';
+import { useProjectsStore } from 'stores/useProjectsStore';
 
 import TheHeader from '@/layouts/theHeader/TheHeader.vue';
 import TheFooter from '@/layouts/theFooter/TheFooter.vue';
 import TheFooterNavigation from '@/layouts/theFooter/TheFooterNavigation.vue';
 import BackgroundGradient from '@/components/backgroundGradient/BackgroundGradient.vue';
 
+import { Project } from 'src/models/interfaces/projects';
+
 const $q = useQuasar();
+const router = useRouter();
+const projectStore = useProjectsStore();
+
+async function generateRoute() {
+  projectStore.projects.forEach((project: Project) => {
+    router.addRoute('projectsView', {
+      name: project.name,
+      path: project.name,
+      component: () => import('../views/ProjectDynamicView.vue'),
+    });
+  });
+}
+
+await projectStore.getProjects();
+await generateRoute();
 
 const computeViewConfig = computed(() => {
   return isScreenMobile.value ? 'lHh Lpr fFf' : 'lHh Lpr lFf';

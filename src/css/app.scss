@@ -2,7 +2,7 @@
 :root {
   --q-gradient-ellispse-left: #0ebbd2;
   --q-gradient-circle-right: #02faaf;
-  --q-gradient-ellispse-1-right: #00c2ff;
+  --q-gradient-ellispse-1-right: #00ff9d;
   --q-gradient-ellispse-2-right: #0ebbd2;
 }
 
@@ -64,7 +64,7 @@ h4 {
   .text-h4,
   h4 {
     font-size: 1.125rem;
-    line-height: 0.5rem;
+    line-height: 1rem;
   }
 }
 @media (min-width: $breakpoint-sm-min) {
@@ -101,20 +101,20 @@ h6 {
 @media (max-width: $breakpoint-sm-min) {
   .text-h6,
   h6 {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     line-height: 0.25rem;
   }
 }
 @media (min-width: $breakpoint-sm-min) {
   .text-h6,
   h6 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: $breakpoint-md-min) {
   .text-h6,
   h6 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 @media (min-width: $breakpoint-lg-min) {

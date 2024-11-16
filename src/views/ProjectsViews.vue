@@ -4,7 +4,7 @@
       <BackgroundGradient />
       <RouterView v-slot="{ Component }">
         <template v-if="Component">
-          <Transition mode="out-in">
+          <Transition mode="fade" :duration="550">
             <KeepAlive :include="['ProjectsView']">
               <component :is="Component" no-animation></component>
             </KeepAlive>

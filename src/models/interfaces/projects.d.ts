@@ -8,6 +8,8 @@ export interface Project {
   category: string;
   year: string;
   company: string;
+  works: string[];
+  participants: string[];
   personal: boolean;
   tech: string[];
 }

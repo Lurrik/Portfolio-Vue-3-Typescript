@@ -10,29 +10,60 @@
       <q-separator class="width-80" />
       <div class="column width-80">
         <div class="row full-width">
-          <div class="col-lg-6 col-sm-12 col-xs-12 column">
-            <div class="row items-center gap-8">
+          <div
+            class="content-center text-body1 col-lg-12 col-sm-12 q-py-md"
+            v-html="project.desc"
+          ></div>
+          <div class="col-lg-6 col-sm-6 col-xs-12 column">
+            <div class="row items-baseline gap-8">
               <h6 class="text-primary col-4">CATEGORIE</h6>
-              <div class="column justify-start text-h6 col-6">
+              <div class="text-h6 col-6" :class="classJustifyList">
                 <span>{{ project.category }}</span>
               </div>
             </div>
-            <div class="row items-center gap-8">
+            <div class="row items-baseline gap-8">
               <h6 class="text-primary col-4">ANNEE</h6>
-              <div class="row justify-start text-h6 col-6">
+              <div class="row text-h6 col-6" :class="classJustify">
                 <span>{{ project.year }}</span>
               </div>
             </div>
-            <div class="row items-center gap-8">
+            <div class="row items-baseline gap-8">
               <h6 class="text-primary col-4">ENTREPRISE</h6>
-              <div class="row justify-start text-h6 col-6">
+              <div class="row text-h6 col-6" :class="classJustify">
                 <span>{{ project.company }}</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-12 q-py-md" v-html="project.desc"></div>
+          <div class="col-lg-6 col-sm-6 col-xs-12 column">
+            <div class="row items-baseline gap-8 max-height-180">
+              <h6 class="text-primary col-4">TRAVAUX</h6>
+              <div class="text-h6 col-6 line-height" :class="classJustifyList">
+                <span
+                  v-for="(work, index) in project.works"
+                  :key="work"
+                  :class="classTextList"
+                >
+                  {{ work }}
+                  {{ index + 1 != project.works.length ? ',' : '' }}
+                </span>
+              </div>
+            </div>
+            <div class="row items-baseline gap-8">
+              <h6 class="text-primary col-4">PARTICIPANTS</h6>
+              <div class="text-h6 col-6 line-height" :class="classJustifyList">
+                <span
+                  v-for="(participant, index) in project.participants"
+                  :key="participant"
+                  :class="classTextList"
+                >
+                  {{ participant }}
+                  {{ index + 1 != project.participants.length ? ',' : '' }}
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="row q-pb-xl gap-8">
+        <div v-if="project.links.length" class="row q-py-xl gap-8">
           <a
             v-for="link in project.links"
             :key="link.path"
@@ -44,7 +75,7 @@
             <i class="fa-solid fa-arrow-up-right-from-square q-px-sm" />
           </a>
         </div>
-        <div class="row q-pb-md gap-8">
+        <div class="row q-py-md gap-8">
           <q-chip
             v-for="tech in project.tech"
             :key="tech"
@@ -57,7 +88,7 @@
       </div>
     </div>
     <q-btn
-      class="absolute-top-right text-primary q-ma-md large-screen-only"
+      class="absolute-top-left text-primary q-ma-md large-screen-only"
       icon="fa fa-arrow-left"
       @click="back"
     >
@@ -104,15 +135,29 @@ const primary: string | null = getCssVar('primary');
 const gradientEllipseLeft: string | null = getCssVar('gradient-ellispse-left');
 const gradientCircleRight: string | null = getCssVar('gradient-circle-right');
 const gradientEllipse1Right: string | null = getCssVar(
-  'gradient-ellispse-1-right'
+  'gradient-ellispse-1-right',
 );
 const gradientEllipse2Right: string | null = getCssVar(
-  'gradient-ellispse-2-right'
+  'gradient-ellispse-2-right',
 );
 
 const projectPicture = computed(() => {
   if (!props.project.name) return '';
   return `https://erickgolos.com/images/projects/${props.project.name}/logo.png`;
+});
+
+const classJustify = computed(() => {
+  return $q.screen.xs || $q.screen.sm ? 'justify-end' : 'justify-start';
+});
+
+const classJustifyList = computed(() => {
+  return $q.screen.xs || $q.screen.sm
+    ? 'justify-end row'
+    : 'justify-start column';
+});
+
+const classTextList = computed(() => {
+  return $q.screen.xs || $q.screen.sm ? 'text-right' : 'text-left';
 });
 
 watch(
@@ -122,7 +167,7 @@ watch(
   },
   {
     immediate: true,
-  }
+  },
 );
 
 function setPrimaryVar(isDark: boolean) {
@@ -130,37 +175,37 @@ function setPrimaryVar(isDark: boolean) {
     setCssVar('primary', props.project.colorDark.primary);
     setCssVar(
       'gradient-ellispse-left',
-      props.project.colorDark.gradientEllipseLeft
+      props.project.colorDark.gradientEllipseLeft,
     );
     setCssVar(
       'gradient-circle-right',
-      props.project.colorDark.gradientCircleRight
+      props.project.colorDark.gradientCircleRight,
     );
     setCssVar(
       'gradient-ellispse-1-right',
-      props.project.colorDark.gradientEllipse1Right
+      props.project.colorDark.gradientEllipse1Right,
     );
     setCssVar(
       'gradient-ellispse-2-right',
-      props.project.colorDark.gradientEllipse2Right
+      props.project.colorDark.gradientEllipse2Right,
     );
   } else {
     setCssVar('primary', props.project.colorLight.primary);
     setCssVar(
       'gradient-ellispse-left',
-      props.project.colorLight.gradientEllipseLeft
+      props.project.colorLight.gradientEllipseLeft,
     );
     setCssVar(
       'gradient-circle-right',
-      props.project.colorLight.gradientCircleRight
+      props.project.colorLight.gradientCircleRight,
     );
     setCssVar(
       'gradient-ellispse-1-right',
-      props.project.colorLight.gradientEllipse1Right
+      props.project.colorLight.gradientEllipse1Right,
     );
     setCssVar(
       'gradient-ellispse-2-right',
-      props.project.colorLight.gradientEllipse2Right
+      props.project.colorLight.gradientEllipse2Right,
     );
   }
 }
@@ -190,6 +235,14 @@ onUnmounted(() => {
 
   .separator {
     width: 50%;
+  }
+
+  .line-height {
+    line-height: 1.3em;
+  }
+
+  .max-height-180 {
+    max-height: 180px;
   }
 
   .logo-card {

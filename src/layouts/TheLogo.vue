@@ -1,7 +1,7 @@
 <template>
   <svg
     id="Calque_1"
-    class="the-header-logo"
+    class="the-logo"
     data-name="Calque 1"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 229.7 220.62"
@@ -33,12 +33,25 @@
   </svg>
 </template>
 
-<script setup></script>
+<script setup lang="ts">
+import { computed } from 'vue';
+interface Props {
+  size?: string;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  size: '40px',
+});
+
+const sizeLogo = computed(() => {
+  return props.size;
+});
+</script>
 
 <style lang="scss">
-.the-header-logo {
-  height: 40px;
-  width: 40px;
+.the-logo {
+  height: v-bind(sizeLogo);
+  width: v-bind(sizeLogo);
 
   .cls-1 {
     fill: none;

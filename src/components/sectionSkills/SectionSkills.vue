@@ -106,6 +106,34 @@ const skills = ref([
     ],
   },
   {
+    label: 'Bundler',
+    visible: false,
+    tools: [
+      {
+        label: 'Vite',
+        picture: 'vite',
+      },
+      {
+        label: 'Rollup',
+        picture: 'rollup',
+      },
+    ],
+  },
+  {
+    label: 'Documentation',
+    visible: false,
+    tools: [
+      {
+        label: 'Vitepress',
+        picture: 'vitepress',
+      },
+      {
+        label: 'Zeroheight',
+        picture: 'zeroheight',
+      },
+    ],
+  },
+  {
     label: 'Testing',
     visible: false,
     tools: [

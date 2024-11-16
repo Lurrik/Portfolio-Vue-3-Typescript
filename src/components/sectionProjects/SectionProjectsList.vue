@@ -17,7 +17,7 @@
         label="Professionel"
       />
     </q-tabs>
-    <div class="list row justify-center gap-8">
+    <div v-if="getProjects.length" class="list row justify-center gap-8">
       <section-projects-list-item
         v-for="(_, index) in projectShownCount"
         :key="index"
@@ -46,6 +46,7 @@ import { useRouter } from 'vue-router';
 import SectionProjectsListItem from '@/components/sectionProjects/SectionProjectsListItem.vue';
 
 import { useProjectsStore } from 'stores/useProjectsStore';
+import { Project } from 'src/models/interfaces/projects';
 
 interface Props {
   navigateFromHome: boolean;
@@ -60,7 +61,9 @@ const tab = ref<string>('all');
 const selectProjectName = ref<string>('');
 const showMore = ref<boolean>(false);
 
-const getProjects = computed(() => {
+const getProjects = computed<Project[]>(() => {
+  if (projectStore.projects.length === 0) return [];
+
   switch (tab.value) {
     case 'all':
       return projectStore.projects;

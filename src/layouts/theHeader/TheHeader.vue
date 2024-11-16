@@ -1,8 +1,8 @@
 <template>
   <q-header class="q-px-sm-xl" :class="classHeaderDark">
     <q-toolbar>
-      <router-link class="row" :to="{ name: 'home' }">
-        <the-header-logo />
+      <router-link class="row q-pl-lg" :to="{ name: 'home' }">
+        <the-logo />
       </router-link>
       <q-space />
       <the-header-navigation v-if="showNavigation" :class="classTextDark" />
@@ -24,7 +24,7 @@ import { useQuasar } from 'quasar';
 
 import { useSettingsStore } from 'stores/useSettingsStore';
 
-import TheHeaderLogo from '@/layouts/theHeader/TheHeaderLogo.vue';
+import TheLogo from '@/layouts/TheLogo.vue';
 import TheHeaderNavigation from '@/layouts/theHeader/TheHeaderNavigation.vue';
 
 const route = useRoute();
@@ -57,7 +57,7 @@ watch(
   },
   {
     immediate: true,
-  }
+  },
 );
 </script>
 
