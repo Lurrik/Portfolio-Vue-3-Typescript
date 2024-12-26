@@ -1,7 +1,8 @@
 /dist
 /src-capacitor
 /src-cordova
+/src-pwa
 /.quasar
 /node_modules
-.eslintrc.js
-/src-ssr
+.eslintrc.cjs
+/quasar.config.*.temporary.compiled*
