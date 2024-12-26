@@ -33,19 +33,19 @@ const settingsStore = useSettingsStore();
 
 const showNavigation = ref<boolean>(false);
 
-const classHeaderDark = computed(() => {
+const classHeaderDark = computed<string>(() => {
   return $q.dark.isActive ? 'dark-mode' : 'bg-white';
 });
 
-const classTextDark = computed(() => {
+const classTextDark = computed<string>(() => {
   return $q.dark.isActive ? 'text-white' : 'text-black';
 });
 
-let DarkMode = computed({
+let DarkMode = computed<boolean>({
   get() {
     return settingsStore.settings.DarkMode;
   },
-  set(value) {
+  set(value: boolean) {
     settingsStore.setDarkMode(value);
   },
 });

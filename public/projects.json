@@ -92,9 +92,9 @@
       "company": "Neoledge",
       "works": ["Etudes", "Développements", "Maintenance"],
       "participants": [
-        "Equipe de développement (27)",
-        "Equipe UI/UX (4)",
-        "Equipe documentation (2)"
+        "Equipe de développement",
+        "Equipe UI/UX",
+        "Equipe documentation"
       ],
       "personal": false,
       "tech": [
@@ -169,7 +169,7 @@
       "year": "2024",
       "company": "Fée d'encre",
       "works": ["Conception de A à Z"],
-      "participants": ["Moi-même", "Fée d'encre"],
+      "participants": ["Moi", "Fée d'encre"],
       "personal": true,
       "tech": ["VUE.JS 3", "QUASAR", "WORKBOX", "HTML", "SCSS", "TYPESCRIPT"]
     },
@@ -201,7 +201,7 @@
       "year": "2023-2024",
       "company": "Maths united",
       "works": ["Conception de A à Z"],
-      "participants": ["Moi-même", "Maths united"],
+      "participants": ["Moi", "Maths united"],
       "personal": false,
       "tech": [
         "VUE.JS",
@@ -326,6 +326,43 @@
       ]
     },
     {
+      "label": "Portail de notification",
+      "name": "portailDeNotification",
+      "desc": "<p>Portail Notification est une application dédiée à la gestion des notifications événementielles et des templates de messages. Elle offre une interface intuitive et performante pour les utilisateurs connectés via un compte Delta Dore (authentification B2B).</p><p>L'application permet de gérer les expériences utilisateur en centralisant les notifications associées. Les utilisateurs peuvent lister, créer, éditer et supprimer des événements pour répondre à leurs besoins spécifiques. De plus, elle offre une gestion complète des templates de messages, incluant la possibilité de les lister, créer, modifier, dupliquer ou supprimer, afin de garantir une communication adaptée et organisée.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#C5D76A",
+        "gradientEllipseLeft": "#92C256",
+        "gradientCircleRight": "#C5D76A",
+        "gradientEllipse1Right": "#24AD8D",
+        "gradientEllipse2Right": "#1F756B"
+      },
+      "colorLight": {
+        "primary": "#1F756B",
+        "gradientEllipseLeft": "#92C256",
+        "gradientCircleRight": "#C5D76A",
+        "gradientEllipse1Right": "#24AD8D",
+        "gradientEllipse2Right": "#1F756B"
+      },
+      "category": "Application web",
+      "year": "2021",
+      "company": "Delta Dore",
+      "works": ["Etudes", "Développements"],
+      "participants": ["Moi, 1 développeur Back-End"],
+      "personal": true,
+      "tech": [
+        "VUE.JS 2",
+        "QUASAR",
+        "WORKBOX",
+        "HTML",
+        "SCSS",
+        "JAVASCRIPT",
+        "VUEX",
+        ".NET",
+        "C#"
+      ]
+    },
+    {
       "label": "Remake home VR/AR",
       "name": "remakeHome",
       "desc": "<p>Pendant le confinement lié au COVID-19, j'ai transformé mon appartement en un terrain d'expérimentation pour la réalité mixte en utilisant mon casque Oculus Quest. Mon idée était de modéliser mon logement à l'échelle 1:1, puis de m'y balader tout en ayant modifié virtuellement l'environnement.</p> <p>C'était à la fois un moyen d'en apprendre un peu plus sur le développement de la réalité mixte et de rendre le confinement un peu plus supportable. Ce projet a été une façon amusante de jouer avec l'espace limité de mon appartement tout en explorant les possibilités infinies de la réalité mixte.</p>",
@@ -353,47 +390,10 @@
       "tech": ["UNITY", "C#", "BLENDER"]
     },
     {
-      "label": "Portail de notification",
-      "name": "portailDeNotification",
-      "desc": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p>",
-      "links": [
-        {
-          "title": "Accès au site",
-          "path": "https://www.design.neoledge.com"
-        }
-      ],
-      "colorDark": {
-        "primary": "#C5D76A",
-        "gradientEllipseLeft": "#92C256",
-        "gradientCircleRight": "#C5D76A",
-        "gradientEllipse1Right": "#24AD8D",
-        "gradientEllipse2Right": "#1F756B"
-      },
-      "colorLight": {
-        "primary": "#1F756B",
-        "gradientEllipseLeft": "#92C256",
-        "gradientCircleRight": "#C5D76A",
-        "gradientEllipse1Right": "#24AD8D",
-        "gradientEllipse2Right": "#1F756B"
-      },
-      "category": "Application web",
-      "year": "2024",
-      "company": "Neoledge",
-      "works": [],
-      "participants": [],
-      "personal": true,
-      "tech": ["HTML", "SCSS", "JAVASCRIPT"]
-    },
-    {
       "label": "LGO2 Alert",
       "name": "lgo2Alert",
-      "desc": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p>",
-      "links": [
-        {
-          "title": "Accès au site",
-          "path": "https://www.design.neoledge.com"
-        }
-      ],
+      "desc": "<p>LGO2 Alert est une application conçue pour faciliter la création et la gestion des alertes et des communications à destination des adhérents ou des professionnels. Elle permet de centraliser et d’organiser les messages importants en proposant une interface claire et intuitive adaptée aux besoins de Giphar.</p><p>L'application offre la possibilité de définir des alertes avec un titre, un type de message et un contenu personnalisé, garantissant une communication ciblée et efficace. Elle intègre des filtres avancés pour segmenter les destinataires en fonction de critères spécifiques, tels que des services, équipements ou données spécifiques. Les utilisateurs peuvent également planifier l’envoi des alertes grâce à des fonctionnalités de programmation, en choisissant une date et une heure précises.</p>",
+      "links": [],
       "colorDark": {
         "primary": "#F2C037",
         "gradientEllipseLeft": "#579C3F",
@@ -409,23 +409,26 @@
         "gradientEllipse2Right": "#02432B"
       },
       "category": "Application web",
-      "year": "2024",
-      "company": "Neoledge",
-      "works": [],
-      "participants": [],
+      "year": "2020",
+      "company": "Giphar",
+      "works": ["Etudes", "Développements"],
+      "participants": ["Moi, 1 développeur Back-End"],
       "personal": false,
-      "tech": ["HTML", "SCSS", "JAVASCRIPT"]
+      "tech": [
+        "VUE.JS 2",
+        "QUASAR",
+        "ELECTRON",
+        "HTML",
+        "SCSS",
+        "JAVASCRIPT",
+        "VUEX"
+      ]
     },
     {
       "label": "Planning Auchan Drive",
       "name": "pgAuchanDrive",
-      "desc": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p>",
-      "links": [
-        {
-          "title": "Accès au site",
-          "path": "https://www.design.neoledge.com"
-        }
-      ],
+      "desc": "<p>Planning Auchan Drive est une application spécialement conçue pour aider les coordinateurs à gérer efficacement les plannings des livreurs en rendant la coordination des équipes intuitive, rapide et fiable. Elle offre un support visuel clair et structuré pour planifier les heures de travail, les pauses, les absences et autres tâches, tout en conservant un historique détaillé des données.</p><p>L'application propose une vue d’ensemble des horaires, permettant une organisation optimale des ressources. Les coordinateurs peuvent facilement ajuster les plannings en fonction des besoins opérationnels en ajoutant ou en modifiant les plages horaires, tout en ayant une traçabilité complète des modifications effectuées. Le système met également en avant les périodes de disponibilité et d’indisponibilité des livreurs, simplifiant ainsi la gestion des absences et des imprévus.</p>",
+      "links": [],
       "colorDark": {
         "primary": "#10974B",
         "gradientEllipseLeft": "#E1001A",
@@ -441,23 +444,26 @@
         "gradientEllipse2Right": "#720F2B"
       },
       "category": "Application web",
-      "year": "2024",
-      "company": "Neoledge",
-      "works": [],
-      "participants": [],
+      "year": "2019",
+      "company": "Auchan",
+      "works": ["Conception de A à Z"],
+      "participants": ["Moi, Auchan Drive Louvroil"],
       "personal": false,
-      "tech": ["HTML", "SCSS", "JAVASCRIPT"]
+      "tech": [
+        "VUE.JS 2",
+        "QUASAR",
+        "ELECTRON",
+        "HTML",
+        "SCSS",
+        "JAVASCRIPT",
+        "VUEX"
+      ]
     },
     {
       "label": "Running",
       "name": "running",
-      "desc": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p>",
-      "links": [
-        {
-          "title": "Accès au site",
-          "path": "https://www.design.neoledge.com"
-        }
-      ],
+      "desc": "<p>Running est une application dédiée à la gestion des courses de cross de l'UNSS (Union Nationale du Sport Scolaire), offrant une interface simple et performante pour organiser et suivre les compétitions. Elle permet aux organisateurs de gérer efficacement les participants, de leur inscription à l’établissement des classements finaux, tout en garantissant un processus fluide et centralisé.</p><p>L'application facilite l'importation et l'exportation des données des participants, permettant une saisie rapide et fiable des informations. Les utilisateurs peuvent consulter et modifier les détails des concurrents, gérer les catégories, identifier et résoudre les doublons ou erreurs, et générer des classements en quelques clics. L'interface propose également des outils de vérification pour détecter les anomalies telles que des erreurs de catégorie ou des données manquantes, garantissant ainsi la conformité des résultats.</p>",
+      "links": [],
       "colorDark": {
         "primary": "#D2CAD0",
         "gradientEllipseLeft": "#877881",
@@ -473,23 +479,18 @@
         "gradientEllipse2Right": "#720F2B"
       },
       "category": "Application de bureau",
-      "year": "2024",
-      "company": "Neoledge",
-      "works": [],
-      "participants": [],
+      "year": "2019",
+      "company": "UNSS",
+      "works": ["Conception de A à Z"],
+      "participants": ["Moi", "UNSS"],
       "personal": false,
-      "tech": ["HTML", "SCSS", "JAVASCRIPT"]
+      "tech": [".NET", "C#", "Windows Forms", "Microsoft Access"]
     },
     {
       "label": "Comunity",
       "name": "comunity",
-      "desc": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p>",
-      "links": [
-        {
-          "title": "Accès au site",
-          "path": "https://www.design.neoledge.com"
-        }
-      ],
+      "desc": "<p>Comunity est une application HRMS (Human Resources Management System) conçue pour simplifier et centraliser la gestion des ressources humaines au sein d'une organisation. Intuitive et polyvalente, elle offre un éventail de fonctionnalités pour répondre aux besoins des employés et des administrateurs, tout en garantissant une expérience utilisateur fluide et efficace.</p><p>Dans le cadre de ce projet, j’ai apporté mon aide à la gestion et au suivi global, tout en participant activement aux prises de décisions concernant l’interface utilisateur (UI) et l’expérience utilisateur (UX). Cette contribution a permis de développer une application à la fois fonctionnelle, ergonomique et adaptée aux attentes des utilisateurs finaux. Avec Comunity, les processus RH sont digitalisés et simplifiés, optimisant ainsi les flux de travail et renforçant l’engagement des collaborateurs.</p>",
+      "links": [],
       "colorDark": {
         "primary": "#A6A6A6",
         "gradientEllipseLeft": "#A6A6A6",
@@ -505,23 +506,23 @@
         "gradientEllipse2Right": "#A6A6A6"
       },
       "category": "Gestion de projet",
-      "year": "2024",
-      "company": "Neoledge",
-      "works": [],
-      "participants": [],
+      "year": "2018",
+      "company": "Vinci Energies",
+      "works": ["Etudes", "Gestion de projet", "UI/UX"],
+      "participants": [
+        "Direction",
+        "Service RH",
+        "Service Comptabilité",
+        "Développeurs prestataires"
+      ],
       "personal": false,
-      "tech": ["HTML", "SCSS", "JAVASCRIPT"]
+      "tech": []
     },
     {
       "label": "Distance de séparation foudre",
       "name": "dsf",
-      "desc": "<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto fuga quae veritatis blanditiis sequi id expedita amet esse aspernatur! Iure, doloribus!</p>",
-      "links": [
-        {
-          "title": "Accès au site",
-          "path": "https://www.design.neoledge.com"
-        }
-      ],
+      "desc": "<p>Cette application est un outil spécialisé conçu pour calculer et définir la distance de séparation foudre conformément aux normes IEC 62305 et NFC 17-102. Elle vise à simplifier et automatiser le processus de mise en conformité des installations face aux risques liés à la foudre, en offrant des calculs précis et rapides, essentiels pour les ingénieurs et techniciens travaillant dans le domaine de la protection contre la foudre.</p><p>L'application permet de renseigner les paramètres spécifiques à une installation, tels que les caractéristiques des structures, les matériaux, les niveaux de protection requis, ainsi que les dimensions des conducteurs. À partir de ces données, elle calcule automatiquement la distance de séparation optimale pour éviter tout arc électrique entre les systèmes conducteurs internes et les dispositifs de protection contre la foudre.</p>",
+      "links": [],
       "colorDark": {
         "primary": "#509DA8",
         "gradientEllipseLeft": "#509DA8",
@@ -537,12 +538,12 @@
         "gradientEllipse2Right": "#4B5D6C"
       },
       "category": "Application de bureau",
-      "year": "2024",
-      "company": "Neoledge",
-      "works": [],
-      "participants": [],
+      "year": "2018",
+      "company": "Vinci Energies",
+      "works": ["Conception de A à Z"],
+      "participants": ["Moi uniquement"],
       "personal": false,
-      "tech": ["HTML", "SCSS", "JAVASCRIPT"]
+      "tech": [".NET", "C#", "Windows Forms", "Microsoft Access"]
     },
     {
       "label": "Cam config",
@@ -564,12 +565,12 @@
         "gradientEllipse2Right": "#6988A4"
       },
       "category": "Application de bureau",
-      "year": "2018",
-      "company": "Actemium",
-      "works": [],
-      "participants": [],
+      "year": "2017",
+      "company": "Vinci Energies",
+      "works": ["Conception de A à Z"],
+      "participants": ["Moi uniquement"],
       "personal": false,
-      "tech": ["VB.NET", "Windows Forms"]
+      "tech": [".NET", "C#", "Windows Forms", "Microsoft Access"]
     },
     {
       "label": "VPR Pipeline",
@@ -591,12 +592,12 @@
         "gradientEllipse2Right": "#477181"
       },
       "category": "Application de bureau",
-      "year": "2018",
-      "company": "Actemium",
-      "works": [],
-      "participants": [],
+      "year": "2017",
+      "company": "Vinci Energies",
+      "works": ["Conception de A à Z"],
+      "participants": ["Moi uniquement"],
       "personal": false,
-      "tech": ["VB.NET", "Windows Forms", "Microsoft Access"]
+      "tech": [".NET", "C#", "Windows Forms", "Microsoft Access"]
     }
   ]
 }

@@ -19,7 +19,7 @@ import { Project } from 'src/models/interfaces/projects';
 const router = useRouter();
 const projectStore = useProjectsStore();
 
-async function generateRoute() {
+async function generateRoute(): Promise<void> {
   projectStore.projects.forEach((project: Project) => {
     router.addRoute('projectsView', {
       name: project.name,
@@ -29,7 +29,7 @@ async function generateRoute() {
   });
 }
 
-async function setupRoutes() {
+async function setupRoutes(): Promise<void> {
   const projectStore = useProjectsStore();
   await projectStore.getProjects();
   generateRoute();

@@ -4,6 +4,19 @@
   --q-gradient-circle-right: #02faaf;
   --q-gradient-ellispse-1-right: #00ff9d;
   --q-gradient-ellispse-2-right: #0ebbd2;
+
+  --x: 0;
+  --y: 0;
+
+  --bg-soft: #f6f6f7;
+  --text-details: rgba(60, 60, 67, 0.78);
+
+  body {
+    &.body--dark {
+      --bg-soft: var(--q-dark-page);
+      --text-details: rgba(255, 235, 245, 0.6);
+    }
+  }
 }
 
 .small-screen-only {

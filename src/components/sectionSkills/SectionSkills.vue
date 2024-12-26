@@ -10,7 +10,7 @@
       </div>
       <div class="list row justify-center q-pb-xl">
         <div
-          v-for="(skill, index) in skills"
+          v-for="(skill, index) in skillsStore.skills"
           :key="index"
           :data-id="index"
           class="col-xs-12 col-md-6"
@@ -28,8 +28,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import SectionSkillsCard from '@/components/sectionSkills/SectionSkillsCard.vue';
+
+import { useSkillsStore } from 'stores/useSkillsStore';
 
 defineProps({
   noAnimation: {
@@ -38,164 +39,7 @@ defineProps({
   },
 });
 
-const skills = ref([
-  {
-    label: 'Langages de balisage / programmation',
-    visible: false,
-    tools: [
-      {
-        label: 'Html',
-        picture: 'html',
-      },
-      {
-        label: 'Css',
-        picture: 'css',
-      },
-      {
-        label: 'Javascript',
-        picture: 'javascript',
-      },
-      {
-        label: 'Typescript',
-        picture: 'typescript',
-      },
-      {
-        label: 'C#',
-        picture: 'csharp',
-      },
-    ],
-  },
-  {
-    label: 'Frameworks',
-    visible: false,
-    tools: [
-      {
-        label: 'Vue',
-        picture: 'vue',
-      },
-      {
-        label: 'Quasar',
-        picture: 'quasar',
-      },
-      {
-        label: '.Net',
-        picture: 'dotnet',
-      },
-    ],
-  },
-  {
-    label: 'Outils front-end',
-    visible: false,
-    tools: [
-      {
-        label: 'Pinia',
-        picture: 'pinia',
-      },
-      {
-        label: 'Vuex',
-        picture: 'vuex',
-      },
-      {
-        label: 'VueUse',
-        picture: 'vueuse',
-      },
-      {
-        label: 'Sass',
-        picture: 'sass',
-      },
-    ],
-  },
-  {
-    label: 'Bundler',
-    visible: false,
-    tools: [
-      {
-        label: 'Vite',
-        picture: 'vite',
-      },
-      {
-        label: 'Rollup',
-        picture: 'rollup',
-      },
-    ],
-  },
-  {
-    label: 'Documentation',
-    visible: false,
-    tools: [
-      {
-        label: 'Vitepress',
-        picture: 'vitepress',
-      },
-      {
-        label: 'Zeroheight',
-        picture: 'zeroheight',
-      },
-    ],
-  },
-  {
-    label: 'Testing',
-    visible: false,
-    tools: [
-      {
-        label: 'Jest',
-        picture: 'jest',
-      },
-      {
-        label: 'Vitest',
-        picture: 'vitest',
-      },
-      {
-        label: 'Storybook',
-        picture: 'storybook',
-      },
-    ],
-  },
-  {
-    label: 'Database',
-    visible: false,
-    tools: [
-      {
-        label: 'Sql server',
-        picture: 'sqlServer',
-      },
-      {
-        label: 'Postegre Sql',
-        picture: 'postgreSql',
-      },
-      {
-        label: 'Firebase',
-        picture: 'firebase',
-      },
-    ],
-  },
-  {
-    label: 'Outils',
-    visible: false,
-    tools: [
-      {
-        label: 'VS Code',
-        picture: 'visualStudioCode',
-      },
-      {
-        label: 'Visual studio',
-        picture: 'visualStudio',
-      },
-      {
-        label: 'Postman',
-        picture: 'postman',
-      },
-      {
-        label: 'Github',
-        picture: 'github',
-      },
-      {
-        label: 'Git',
-        picture: 'git',
-      },
-    ],
-  },
-]);
+const skillsStore = useSkillsStore();
 </script>
 
 <style lang="scss">

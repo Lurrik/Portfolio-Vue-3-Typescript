@@ -13,13 +13,12 @@
 
 <script setup lang="ts">
 import { ref, computed, watch } from 'vue';
+import { useQuasar, getCssVar } from 'quasar';
 import { useRoute, useRouter } from 'vue-router';
-import { getCssVar } from 'quasar';
 
 import { CurvedBottomNavigation } from 'bottom-navigation-vue';
 import 'bottom-navigation-vue/dist/style.css';
 
-import { useQuasar } from 'quasar';
 const $q = useQuasar();
 const route = useRoute();
 const router = useRouter();
@@ -30,9 +29,16 @@ enum Tab {
   Projects = 2,
 }
 
+interface Options {
+  id: Tab;
+  name: string;
+  icon: string;
+  title: string;
+}
+
 const selected = ref<number>(Tab.Home);
 
-const options = ref([
+const options = ref<Options[]>([
   {
     id: Tab.Skills,
     name: 'skills',
@@ -53,15 +59,15 @@ const options = ref([
   },
 ]);
 
-const classDarkMode = computed(() => {
+const classDarkMode = computed<string>(() => {
   return $q.dark.isActive ? 'bg-dark' : 'bg-white';
 });
 
-const backGroundColor = computed(() => {
+const backGroundColor = computed<string | null>(() => {
   return $q.dark.isActive ? getCssVar('dark') : 'white';
 });
 
-const iconColor = computed(() => {
+const iconColor = computed<string | null>(() => {
   return $q.dark.isActive ? 'white' : getCssVar('primary');
 });
 
@@ -90,7 +96,7 @@ watch(
   },
   {
     immediate: true,
-  }
+  },
 );
 </script>
 

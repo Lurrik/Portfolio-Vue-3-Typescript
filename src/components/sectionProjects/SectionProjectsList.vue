@@ -17,7 +17,11 @@
         label="Professionel"
       />
     </q-tabs>
-    <div v-if="getProjects.length" class="list row justify-center gap-8">
+    <div
+      v-if="getProjects.length"
+      id="sectionProjectsList"
+      class="list row justify-center gap-8"
+    >
       <section-projects-list-item
         v-for="(_, index) in projectShownCount"
         :key="index"
@@ -25,6 +29,8 @@
         :label="getProjects[index].label"
         :category="getProjects[index].category"
         :navigate-from-home="navigateFromHome"
+        :offset-left-parent="offsetLeftParent"
+        :offset-top-parent="offsetTopParent"
         @select-project-name="selectProjectName = $event"
       />
       <div class="row q-pt-md full-width justify-center">
@@ -40,13 +46,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onActivated } from 'vue';
+import { ref, computed, watch, onActivated, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
+import { useWindowSize } from '@vueuse/core';
 
 import SectionProjectsListItem from '@/components/sectionProjects/SectionProjectsListItem.vue';
 
 import { useProjectsStore } from 'stores/useProjectsStore';
-import { Project } from 'src/models/interfaces/projects';
+
+import type { Project } from 'src/models/interfaces/projects';
 
 interface Props {
   navigateFromHome: boolean;
@@ -55,11 +63,16 @@ interface Props {
 defineProps<Props>();
 
 const router = useRouter();
+const { width } = useWindowSize();
+
 const projectStore = useProjectsStore();
 
 const tab = ref<string>('all');
 const selectProjectName = ref<string>('');
 const showMore = ref<boolean>(false);
+
+const offsetTopParent = ref<number | undefined>(-1);
+const offsetLeftParent = ref<number | undefined>(-1);
 
 const getProjects = computed<Project[]>(() => {
   if (projectStore.projects.length === 0) return [];
@@ -80,7 +93,26 @@ const projectShownCount = computed<number>(() => {
   return showMore.value ? getProjects.value.length : 6;
 });
 
+function setOffset(): void {
+  const div = document.getElementById('sectionProjectsList');
+
+  const parent = div?.offsetParent;
+  offsetTopParent.value = parent?.offsetTop;
+  offsetLeftParent.value = parent?.offsetLeft;
+}
+
+watch(
+  () => width.value,
+  () => {
+    setOffset();
+  },
+);
+
 onActivated(() => {
   if (selectProjectName.value) router.push(`#${selectProjectName.value}`);
+});
+
+onMounted(() => {
+  setOffset();
 });
 </script>

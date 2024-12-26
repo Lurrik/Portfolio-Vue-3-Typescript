@@ -35,6 +35,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
+
 interface Props {
   size?: string;
 }
@@ -43,7 +44,7 @@ const props = withDefaults(defineProps<Props>(), {
   size: '40px',
 });
 
-const sizeLogo = computed(() => {
+const sizeLogo = computed<string>(() => {
   return props.size;
 });
 </script>

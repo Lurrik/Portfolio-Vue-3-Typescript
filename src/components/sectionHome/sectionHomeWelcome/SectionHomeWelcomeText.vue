@@ -24,6 +24,7 @@
 import { useQuasar } from 'quasar';
 import { computed } from 'vue';
 import { Typed } from '@duskmoon/vue3-typed-js';
+
 import type { TypedOptions } from '@duskmoon/vue3-typed-js';
 
 const $q = useQuasar();

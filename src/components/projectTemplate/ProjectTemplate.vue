@@ -88,7 +88,7 @@
       </div>
     </div>
     <q-btn
-      class="absolute-top-left text-primary q-ma-md large-screen-only"
+      class="back-button text-primary q-ma-md large-screen-only"
       icon="fa fa-arrow-left"
       @click="back"
     >
@@ -101,20 +101,20 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, onUnmounted } from 'vue';
-import { useRouter } from 'vue-router';
-
 import { useQuasar, getCssVar, setCssVar } from 'quasar';
+import { useRouter } from 'vue-router';
 import { useMotion } from '@vueuse/motion';
-import { Project } from 'src/models/interfaces/projects';
 
-const $q = useQuasar();
-const router = useRouter();
+import type { Project } from 'src/models/interfaces/projects';
+
 interface Props {
   project: Project;
 }
 
 const props = defineProps<Props>();
 
+const $q = useQuasar();
+const router = useRouter();
 const projectLogo = ref<HTMLElement>();
 
 useMotion(projectLogo, {
@@ -141,22 +141,22 @@ const gradientEllipse2Right: string | null = getCssVar(
   'gradient-ellispse-2-right',
 );
 
-const projectPicture = computed(() => {
+const projectPicture = computed<string>(() => {
   if (!props.project.name) return '';
   return `https://erickgolos.com/images/projects/${props.project.name}/logo.png`;
 });
 
-const classJustify = computed(() => {
+const classJustify = computed<string>(() => {
   return $q.screen.xs || $q.screen.sm ? 'justify-end' : 'justify-start';
 });
 
-const classJustifyList = computed(() => {
+const classJustifyList = computed<string>(() => {
   return $q.screen.xs || $q.screen.sm
     ? 'justify-end row'
     : 'justify-start column';
 });
 
-const classTextList = computed(() => {
+const classTextList = computed<string>(() => {
   return $q.screen.xs || $q.screen.sm ? 'text-right' : 'text-left';
 });
 
@@ -170,7 +170,7 @@ watch(
   },
 );
 
-function setPrimaryVar(isDark: boolean) {
+function setPrimaryVar(isDark: boolean): void {
   if (isDark) {
     setCssVar('primary', props.project.colorDark.primary);
     setCssVar(
@@ -252,6 +252,12 @@ onUnmounted(() => {
     .q-img {
       max-height: 50vh;
     }
+  }
+
+  .back-button {
+    position: fixed;
+    top: 50px;
+    left: 12px;
   }
 }
 </style>

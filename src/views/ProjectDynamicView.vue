@@ -7,14 +7,16 @@ import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
 import ProjectTemplate from '@/components/projectTemplate/ProjectTemplate.vue';
+
 import { useProjectsStore } from 'stores/useProjectsStore';
-import { Project } from 'src/models/interfaces/projects';
+
+import type { Project } from 'src/models/interfaces/projects';
 
 const route = useRoute();
 
 const projectStore = useProjectsStore();
 
-const project = computed(() => {
+const project = computed<Project | null>(() => {
   if (projectStore.projects.length === 0) return null;
 
   return projectStore.projects.filter(
