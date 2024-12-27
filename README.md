@@ -57,7 +57,7 @@ Using NPM: Simply run the below commands.
 
 ```bash
 # Install dependencies
-$ npm install
+$ npm ci
 
 # Start the development server (spa)
 $ npm run dev
