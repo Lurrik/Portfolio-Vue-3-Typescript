@@ -30,7 +30,7 @@ These instructions will get you a copy of the project up and running on your loc
 You'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [NPM](http://npmjs.com)) installed on your computer.
 
 ```
-node@v18.12.1 or higher
+node@v22.14.0 or higher
 npm@8.19.2 or higher
 ```
 

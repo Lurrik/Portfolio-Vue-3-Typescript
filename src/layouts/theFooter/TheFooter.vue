@@ -4,13 +4,15 @@
     :class="Dark.isActive ? classDark : classLight"
   >
     <span>Portfolio Erick Golos</span>
-    <span>@2024</span>
+    <span>@{{ currentYear }}</span>
   </footer>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
 import { Dark } from 'quasar';
+
+const currentYear = computed<number>(() => new Date().getFullYear());
 
 const classLight = computed<string[]>(() => {
   return ['bg-white', 'text-black'];
