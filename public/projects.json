@@ -1,6 +1,42 @@
 {
   "projects": [
     {
+      "label": "Fallout JDR",
+      "name": "falloutJdr",
+      "desc": "<p>Fallout JDR est une application dédiée au jeu de rôle sur table dans l’univers de Fallout, afin d’offrir une expérience immersive et fluide aux joueurs. Chaque participant dispose d’une interface numérique personnalisée inspirée du célèbre Pip-Boy, fidèle à l’esthétique rétro-futuriste et verdâtre de la série. Cette interface permet à chacun de consulter en temps réel les caractéristiques de son personnage, son inventaire, ses compétences, sa santé, et bien plus encore, comme s’il utilisait réellement un Pip-Boy pendant l’aventure.</p><p>L’objectif de cette application est de moderniser et enrichir les parties de JDR papier, tout en respectant l’ambiance unique de Fallout. Elle facilite la gestion des personnages et renforce l’immersion, grâce à une interface intuitive, interactive et visuellement cohérente avec l’univers du jeu. C’est un outil pensé à la fois pour le maître du jeu et les joueurs, afin de vivre une aventure plus fluide, plus visuelle, et totalement personnalisée.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#5AB042",
+        "gradientEllipseLeft": "#1ED81E",
+        "gradientCircleRight": "#1ED81E",
+        "gradientEllipse1Right": "#5AB042",
+        "gradientEllipse2Right": "#5AB042"
+      },
+      "colorLight": {
+        "primary": "#5AB042",
+        "gradientEllipseLeft": "#1ED81E",
+        "gradientCircleRight": "#1ED81E",
+        "gradientEllipse1Right": "#5AB042",
+        "gradientEllipse2Right": "#5AB042"
+      },
+      "category": "Application PWA",
+      "year": "2025",
+      "company": "/",
+      "works": ["Conception de A à Z"],
+      "participants": ["Moi uniquement"],
+      "personal": true,
+      "tech": [
+        "VUE.JS 3",
+        "QUASAR",
+        "WORKBOX",
+        "HTML",
+        "SCSS",
+        "TYPESCRIPT",
+        "PINIA",
+        "FIREBASE"
+      ]
+    },
+    {
       "label": "Monday",
       "name": "monday",
       "desc": "<p>Monday est une application de gestion de tâches et de projets pour mon quotidien en entreprise, intégrant une approche ludique pour booster ma productivité et transformant les tâches quotidiennes sous forme de quêtes.</p> <p>Cette application combine des fonctionnalités classiques de gestion de projets, telles que la planification, le suivi des tâches, et la collaboration, avec des éléments de gamification pour rendre mon travail plus motivant et amusant.</p>",

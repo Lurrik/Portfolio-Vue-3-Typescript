@@ -21,6 +21,10 @@
           "picture": "typescript"
         },
         {
+          "label": "Dart",
+          "picture": "dart"
+        },
+        {
           "label": "C#",
           "picture": "csharp"
         }
@@ -37,6 +41,10 @@
         {
           "label": "Quasar",
           "picture": "quasar"
+        },
+        {
+          "label": "Flutter",
+          "picture": "flutter"
         },
         {
           "label": ".Net",

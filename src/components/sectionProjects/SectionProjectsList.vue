@@ -8,13 +8,13 @@
       <q-tab class="text-capitalize text-primary" name="all" label="Tout" />
       <q-tab
         class="text-capitalize text-primary"
-        name="personal"
-        label="Personel"
+        name="job"
+        label="Professionel"
       />
       <q-tab
         class="text-capitalize text-primary"
-        name="job"
-        label="Professionel"
+        name="personal"
+        label="Personnel"
       />
     </q-tabs>
     <div
