@@ -54,10 +54,6 @@ export default {
         label: 'Location',
         value: 'France',
       },
-      email: {
-        label: 'Email',
-        value: 'erickgolos@gmail.com',
-      },
       languages: {
         label: 'Languages',
         value: 'French, English',
@@ -69,10 +65,6 @@ export default {
       education: {
         label: 'Education',
         value: 'Enginneer school',
-      },
-      freelance: {
-        label: 'Freelance',
-        value: 'Available',
       },
       interests: {
         label: 'Interests',

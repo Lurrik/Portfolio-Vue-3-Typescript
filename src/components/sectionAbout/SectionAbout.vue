@@ -174,14 +174,12 @@ interface InfoItem {
 const personalInfo: Record<string, InfoItem> = {
   name: { icon: 'person' },
   location: { icon: 'place' },
-  email: { icon: 'email' },
   languages: { icon: 'language' },
 };
 
 const professionalInfo: Record<string, InfoItem> = {
   experience: { icon: 'work' },
   education: { icon: 'school' },
-  freelance: { icon: 'business_center' },
   interests: { icon: 'interests' },
 };
 </script>
