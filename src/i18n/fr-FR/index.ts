@@ -1,10 +1,8 @@
 export default {
-  failed: 'Action échouée',
-  success: 'Action réussie',
   navigation: {
     home: 'Accueil',
     skills: 'Expertises',
-    projects: 'Projets'
+    projects: 'Projets',
   },
   welcome: {
     greeting: 'Bonjour,',
@@ -14,7 +12,7 @@ export default {
   },
   skills: {
     title: 'Expertises',
-    subtitle: 'Liste des outils de développement'
+    subtitle: 'Liste des outils de développement',
   },
   projects: {
     title: 'Projets',
@@ -22,9 +20,9 @@ export default {
     tabs: {
       all: 'Tout',
       professional: 'Professionnel',
-      personal: 'Personnel'
+      personal: 'Personnel',
     },
-    showMore: 'Voir plus de projets'
+    showMore: 'Voir plus de projets',
   },
   project: {
     category: 'CATÉGORIE',
@@ -32,6 +30,11 @@ export default {
     company: 'ENTREPRISE',
     works: 'TRAVAUX',
     participants: 'PARTICIPANTS',
-    back: 'Retour'
+    back: 'Retour',
+  },
+  social: {
+    linkedin: 'Mon profil LinkedIn',
+    github: 'Mon profil GitHub',
+    email: 'Me contacter par email',
   },
 };

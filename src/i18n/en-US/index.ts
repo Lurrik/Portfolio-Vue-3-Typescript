@@ -1,6 +1,4 @@
 export default {
-  failed: 'Action failed',
-  success: 'Action was successful',
   navigation: {
     home: 'Home',
     skills: 'Skills',
@@ -22,9 +20,9 @@ export default {
     tabs: {
       all: 'All',
       professional: 'Professional',
-      personal: 'Personal'
+      personal: 'Personal',
     },
-    showMore: 'Show more projects'
+    showMore: 'Show more projects',
   },
   project: {
     category: 'CATEGORY',
@@ -32,6 +30,11 @@ export default {
     company: 'COMPANY',
     works: 'WORKS',
     participants: 'PARTICIPANTS',
-    back: 'Back'
+    back: 'Back',
+  },
+  social: {
+    linkedin: 'My LinkedIn profile',
+    github: 'My GitHub profile',
+    email: 'Contact me by email',
   },
 };
