@@ -1,6 +1,7 @@
 <template>
   <q-page>
     <section-home id="home" />
+    <section-about id="about" class="q-py-lg" />
     <section-skills id="skills" class="q-py-lg" />
     <section-projects
       id="projects"
@@ -14,6 +15,7 @@
 import { useMeta, useQuasar } from 'quasar';
 
 import SectionHome from '@/components/sectionHome/SectionHome.vue';
+import SectionAbout from '@/components/sectionAbout/SectionAbout.vue';
 import SectionSkills from '@/components/sectionSkills/SectionSkills.vue';
 import SectionProjects from '@/components/sectionProjects/SectionProjects.vue';
 

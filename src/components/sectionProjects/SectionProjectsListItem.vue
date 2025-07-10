@@ -84,12 +84,12 @@ watch(
 .section-project-list-item {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   border-radius: 8px;
   padding: 8px;
 
   @media (min-width: 768px) {
-    width: calc(100% / 3);
+    width: 33.3333%;
   }
 
   .card {

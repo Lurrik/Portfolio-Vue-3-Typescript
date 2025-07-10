@@ -17,6 +17,14 @@
       :label="t('navigation.home')"
     />
     <q-route-tab
+      name="about"
+      to="#about"
+      exact
+      replace
+      icon="fa-solid fa-user"
+      :label="t('navigation.about')"
+    />
+    <q-route-tab
       name="skills"
       to="#skills"
       exact

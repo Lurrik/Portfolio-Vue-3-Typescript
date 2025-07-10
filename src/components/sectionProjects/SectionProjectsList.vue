@@ -20,7 +20,7 @@
     <div
       v-if="getProjects.length"
       id="sectionProjectsList"
-      class="list row justify-center gap-8"
+      class="list row justify-center q-col-gutter-md"
     >
       <section-projects-list-item
         v-for="(_, index) in projectShownCount"

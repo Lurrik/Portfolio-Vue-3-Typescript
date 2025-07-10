@@ -15,6 +15,7 @@
 import { ref, computed, watch } from 'vue';
 import { useQuasar, getCssVar } from 'quasar';
 import { useRoute, useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
 
 import { CurvedBottomNavigation } from 'bottom-navigation-vue';
 import 'bottom-navigation-vue/dist/style.css';
@@ -22,11 +23,13 @@ import 'bottom-navigation-vue/dist/style.css';
 const $q = useQuasar();
 const route = useRoute();
 const router = useRouter();
+const { t } = useI18n();
 
 enum Tab {
   Skills = 0,
   Home = 1,
   Projects = 2,
+  About = 3,
 }
 
 interface Options {
@@ -43,19 +46,25 @@ const options = ref<Options[]>([
     id: Tab.Skills,
     name: 'skills',
     icon: 'fa-solid fa-code',
-    title: 'Expertises',
+    title: t('navigation.skills'),
   },
   {
     id: Tab.Home,
     name: 'home',
     icon: 'fa-solid fa-house-user',
-    title: 'Accueil',
+    title: t('navigation.home'),
   },
   {
     id: Tab.Projects,
     name: 'projects',
     icon: 'fa-solid fa-list-check',
-    title: 'Projets',
+    title: t('navigation.projects'),
+  },
+  {
+    id: Tab.About,
+    name: 'about',
+    icon: 'fa-solid fa-user',
+    title: t('navigation.about'),
   },
 ]);
 
@@ -89,6 +98,9 @@ watch(
         break;
       case 'skills':
         selected.value = Tab.Skills;
+        break;
+      case 'about':
+        selected.value = Tab.About;
         break;
       default:
         break;

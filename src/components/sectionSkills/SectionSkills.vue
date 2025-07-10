@@ -1,13 +1,10 @@
 <template>
   <div class="section-skills flex justify-center">
     <div class="col-8 column">
-      <div class="text-center flex column no-wrap">
-        <h3 class="q-mb-md text-primary">{{ t('skills.title') }}</h3>
-        <span class="text-grey text-subtitle1">
-          {{ t('skills.subtitle') }}
-        </span>
-        <q-separator class="q-my-md" inset />
-      </div>
+      <section-header
+        :title="t('skills.title')"
+        :subtitle="t('skills.subtitle')"
+      />
       <div class="list row justify-center q-pb-xl">
         <div
           v-for="(skill, index) in skillsStore.skills"
@@ -29,6 +26,8 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+
+import SectionHeader from '../common/SectionHeader.vue';
 import SectionSkillsCard from '@/components/sectionSkills/SectionSkillsCard.vue';
 
 import { useSkillsStore } from '../../stores/useSkillsStore';
