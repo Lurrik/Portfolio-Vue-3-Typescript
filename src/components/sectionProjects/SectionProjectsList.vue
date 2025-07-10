@@ -5,16 +5,16 @@
       class="text-teal q-pb-md"
       @update:model-value="showMore = false"
     >
-      <q-tab class="text-capitalize text-primary" name="all" label="Tout" />
+      <q-tab class="text-capitalize text-primary" name="all" :label="t('projects.tabs.all')" />
       <q-tab
         class="text-capitalize text-primary"
         name="job"
-        label="Professionel"
+        :label="t('projects.tabs.professional')"
       />
       <q-tab
         class="text-capitalize text-primary"
         name="personal"
-        label="Personnel"
+        :label="t('projects.tabs.personal')"
       />
     </q-tabs>
     <div
@@ -36,7 +36,7 @@
       <div class="row q-pt-md full-width justify-center">
         <q-btn
           v-if="!showMore"
-          label="Voir plus de projets"
+          :label="t('projects.showMore')"
           color="primary"
           @click="showMore = true"
         />
@@ -49,6 +49,7 @@
 import { ref, computed, watch, onActivated, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useWindowSize } from '@vueuse/core';
+import { useI18n } from 'vue-i18n';
 
 import SectionProjectsListItem from '@/components/sectionProjects/SectionProjectsListItem.vue';
 
@@ -64,6 +65,7 @@ defineProps<Props>();
 
 const router = useRouter();
 const { width } = useWindowSize();
+const { t } = useI18n();
 
 const projectStore = useProjectsStore();
 

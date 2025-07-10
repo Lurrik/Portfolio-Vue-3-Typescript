@@ -14,7 +14,7 @@
       exact
       replace
       icon="fa-solid fa-house-user"
-      label="Accueil"
+      :label="t('navigation.home')"
     />
     <q-route-tab
       name="skills"
@@ -22,7 +22,7 @@
       exact
       replace
       icon="fa-solid fa-code"
-      label="Expertises"
+      :label="t('navigation.skills')"
     />
     <q-route-tab
       name="projects"
@@ -30,13 +30,17 @@
       exact
       replace
       icon="fa-solid fa-list-check"
-      label="Projets"
+      :label="t('navigation.projects')"
     />
   </q-tabs>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
 const tab = ref('home');
 </script>
 

@@ -1,0 +1,172 @@
+{
+  "skills": [
+    {
+      "label": "Markup / Programming Languages",
+      "visible": false,
+      "tools": [
+        {
+          "label": "Html",
+          "picture": "html"
+        },
+        {
+          "label": "Css",
+          "picture": "css"
+        },
+        {
+          "label": "Javascript",
+          "picture": "javascript"
+        },
+        {
+          "label": "Typescript",
+          "picture": "typescript"
+        },
+        {
+          "label": "Dart",
+          "picture": "dart"
+        },
+        {
+          "label": "C#",
+          "picture": "csharp"
+        }
+      ]
+    },
+    {
+      "label": "Frameworks",
+      "visible": false,
+      "tools": [
+        {
+          "label": "Vue",
+          "picture": "vue"
+        },
+        {
+          "label": "Quasar",
+          "picture": "quasar"
+        },
+        {
+          "label": "Flutter",
+          "picture": "flutter"
+        },
+        {
+          "label": ".Net",
+          "picture": "dotnet"
+        }
+      ]
+    },
+    {
+      "label": "Frontend Tools",
+      "visible": false,
+      "tools": [
+        {
+          "label": "Pinia",
+          "picture": "pinia"
+        },
+        {
+          "label": "Vuex",
+          "picture": "vuex"
+        },
+        {
+          "label": "VueUse",
+          "picture": "vueuse"
+        },
+        {
+          "label": "Sass",
+          "picture": "sass"
+        }
+      ]
+    },
+    {
+      "label": "Bundler",
+      "visible": false,
+      "tools": [
+        {
+          "label": "Vite",
+          "picture": "vite"
+        },
+        {
+          "label": "Rollup",
+          "picture": "rollup"
+        }
+      ]
+    },
+    {
+      "label": "Documentation",
+      "visible": false,
+      "tools": [
+        {
+          "label": "Vitepress",
+          "picture": "vitepress"
+        },
+        {
+          "label": "Zeroheight",
+          "picture": "zeroheight"
+        }
+      ]
+    },
+    {
+      "label": "Testing",
+      "visible": false,
+      "tools": [
+        {
+          "label": "Jest",
+          "picture": "jest"
+        },
+        {
+          "label": "Vitest",
+          "picture": "vitest"
+        },
+        {
+          "label": "Storybook",
+          "picture": "storybook"
+        }
+      ]
+    },
+    {
+      "label": "Database",
+      "visible": false,
+      "tools": [
+        {
+          "label": "SQL Server",
+          "picture": "sqlServer"
+        },
+        {
+          "label": "PostgreSQL",
+          "picture": "postgreSql"
+        },
+        {
+          "label": "Firebase",
+          "picture": "firebase"
+        }
+      ]
+    },
+    {
+      "label": "Tools",
+      "visible": false,
+      "tools": [
+        {
+          "label": "VS Code",
+          "picture": "visualStudioCode"
+        },
+        {
+          "label": "Visual studio",
+          "picture": "visualStudio"
+        },
+        {
+          "label": "Android Studio",
+          "picture": "androidStudio"
+        },
+        {
+          "label": "Xcode",
+          "picture": "xcode"
+        },
+        {
+          "label": "Postman",
+          "picture": "postman"
+        },
+        {
+          "label": "Github",
+          "picture": "github"
+        }
+      ]
+    }
+  ]
+}

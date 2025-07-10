@@ -1,0 +1,635 @@
+{
+  "projects": [
+    {
+      "label": "Fallout JDR",
+      "name": "falloutJdr",
+      "desc": "<p>Fallout RPG is an application dedicated to tabletop role-playing in the Fallout universe, designed to offer an immersive and smooth experience to players. Each participant has a customized digital interface inspired by the famous Pip-Boy, faithful to the retro-futuristic and greenish aesthetic of the series. This interface allows everyone to consult their character's characteristics, inventory, skills, health, and much more in real-time, as if they were actually using a Pip-Boy during the adventure.</p><p>The goal of this application is to modernize and enrich paper RPG sessions while respecting Fallout's unique atmosphere. It facilitates character management and enhances immersion, thanks to an intuitive, interactive interface that is visually consistent with the game's universe. It's a tool designed for both the game master and players, to experience a more fluid, more visual, and totally customized adventure.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#5AB042",
+        "gradientEllipseLeft": "#1ED81E",
+        "gradientCircleRight": "#1ED81E",
+        "gradientEllipse1Right": "#5AB042",
+        "gradientEllipse2Right": "#5AB042"
+      },
+      "colorLight": {
+        "primary": "#5AB042",
+        "gradientEllipseLeft": "#1ED81E",
+        "gradientCircleRight": "#1ED81E",
+        "gradientEllipse1Right": "#5AB042",
+        "gradientEllipse2Right": "#5AB042"
+      },
+      "category": "PWA Application",
+      "year": "2025",
+      "company": "/",
+      "works": ["End-to-end design"],
+      "participants": ["Myself only"],
+      "personal": true,
+      "tech": [
+        "VUE.JS 3",
+        "QUASAR",
+        "WORKBOX",
+        "HTML",
+        "SCSS",
+        "TYPESCRIPT",
+        "PINIA",
+        "FIREBASE"
+      ]
+    },
+    {
+      "label": "Monday",
+      "name": "monday",
+      "desc": "<p>Monday is a task and project management application for my daily work in the company, integrating a gamification approach to boost my productivity and transform daily tasks into quests.</p> <p>This application combines classic project management features, such as planning, task tracking, and collaboration, with gamification elements to make my work more motivating and fun.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#80D1CA",
+        "gradientEllipseLeft": "#80D1CA",
+        "gradientCircleRight": "#80D1CA",
+        "gradientEllipse1Right": "#283442",
+        "gradientEllipse2Right": "#283442"
+      },
+      "colorLight": {
+        "primary": "#283442",
+        "gradientEllipseLeft": "#80D1CA",
+        "gradientCircleRight": "#80D1CA",
+        "gradientEllipse1Right": "#283442",
+        "gradientEllipse2Right": "#283442"
+      },
+      "category": "PWA Application",
+      "year": "2024",
+      "company": "/",
+      "works": ["End-to-end design"],
+      "participants": ["Myself only"],
+      "personal": true,
+      "tech": [
+        "VUE.JS 3",
+        "QUASAR",
+        "WORKBOX",
+        "HTML",
+        "SCSS",
+        "TYPESCRIPT",
+        "PINIA",
+        "FIREBASE"
+      ]
+    },
+    {
+      "label": "Nui Library",
+      "name": "nuiLibrary",
+      "desc": "<p>Nui is a reusable component library designed for Vue.js developers, designed to accelerate and standardize development. It offers a wide range of ready-to-use elements, such as buttons, form fields, tables, and much more, all configurable and conforming to Neoledge's design system.</p><p>Thanks to this library, developers can easily integrate robust and consistent features into their projects, reducing development time while ensuring a quality user experience.</p>",
+      "links": [
+        {
+          "title": "Library documentation",
+          "path": "https://design.neoledge.com/9372ad334/p/78fe31-welcome"
+        }
+      ],
+      "colorDark": {
+        "primary": "#C6E0E7",
+        "gradientEllipseLeft": "#C6E0E7",
+        "gradientCircleRight": "#C6E0E7",
+        "gradientEllipse1Right": "#C6E0E7",
+        "gradientEllipse2Right": "#C6E0E7"
+      },
+      "colorLight": {
+        "primary": "#064252",
+        "gradientEllipseLeft": "#064252",
+        "gradientCircleRight": "#064252",
+        "gradientEllipse1Right": "#064252",
+        "gradientEllipse2Right": "#064252"
+      },
+      "category": "Library",
+      "year": "2024",
+      "company": "Neoledge",
+      "works": ["Research", "Development", "Project management"],
+      "participants": ["Development team (27)", "UI/UX team (4)"],
+      "personal": false,
+      "tech": ["VUE.JS 3", "HTML", "SCSS", "TYPESCRIPT", "STORYBOOK", "VITEST"]
+    },
+    {
+      "label": "Elise",
+      "name": "elise",
+      "desc": "<p>Elise is an electronic document management application designed to centralize, organize, and secure the entire set of digital files of a company. It allows documents to be digitized, classified, and archived in a structured manner, while offering advanced search, collaboration, and access control features.</p> <p>Thanks to Elise, companies can reduce their dependency on paper, improve their operational efficiency, and ensure compliance with regulations in document management. The application also facilitates version tracking and document signing.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#0B7A98",
+        "gradientEllipseLeft": "#0B7A98",
+        "gradientCircleRight": "#0B7A98",
+        "gradientEllipse1Right": "#0B7A98",
+        "gradientEllipse2Right": "#C6DFE7"
+      },
+      "colorLight": {
+        "primary": "#064252",
+        "gradientEllipseLeft": "#064252",
+        "gradientCircleRight": "#0B7A98",
+        "gradientEllipse1Right": "#0B7A98",
+        "gradientEllipse2Right": "#C6DFE7"
+      },
+      "category": "Web application",
+      "year": "2021-2024",
+      "company": "Neoledge",
+      "works": ["Research", "Development", "Maintenance"],
+      "participants": ["Development team", "UI/UX team", "Documentation team"],
+      "personal": false,
+      "tech": [
+        "VUE.JS 3",
+        "VUE.JS 2",
+        "HTML",
+        "SCSS",
+        "JAVASCRIPT",
+        "TYPESCRIPT",
+        "VUEX",
+        ".NET",
+        "C#"
+      ]
+    },
+    {
+      "label": "Portfolio",
+      "name": "portfolio",
+      "desc": "<p>My personal portfolio is a mobile and web solution that allows me to present my work professionally. It groups my projects, skills, and experiences in an interactive and accessible interface, making it easier for recruiters, potential clients, or collaborators to navigate. It features a logo with a Celtic style representing the letters E and G (my initials).</p> <p>This site allows me to highlight my achievements through images, videos, and detailed descriptions with additional features like PWA to keep my portfolio and see the latest updates throughout my professional journey.</p>",
+      "links": [
+        {
+          "title": "Access to the site",
+          "path": "https://erickgolos.com"
+        }
+      ],
+      "colorDark": {
+        "primary": "#42b883",
+        "gradientEllipseLeft": "#0ebbd2",
+        "gradientCircleRight": "#02faaf",
+        "gradientEllipse1Right": "#00c2ff",
+        "gradientEllipse2Right": "#0ebbd2"
+      },
+      "colorLight": {
+        "primary": "#42b883",
+        "gradientEllipseLeft": "#0ebbd2",
+        "gradientCircleRight": "#02faaf",
+        "gradientEllipse1Right": "#00c2ff",
+        "gradientEllipse2Right": "#0ebbd2"
+      },
+      "category": "PWA Application",
+      "year": "2024",
+      "company": "/",
+      "works": ["End-to-end design"],
+      "participants": ["Myself only"],
+      "personal": true,
+      "tech": ["VUE.JS 3", "QUASAR", "WORKBOX", "HTML", "SCSS", "TYPESCRIPT"]
+    },
+    {
+      "label": "Fée d'encre",
+      "name": "feedencre",
+      "desc": "<p>Fée d'Encre is the professional portfolio of Mélanie Boulanger, an illustrator specializing in children's books and fantasy universes. Mélanie has developed a distinct style, blending tenderness and dreams, transporting young readers to captivating imaginary worlds. </p><p>The goal was to recreate this style through this site while highlighting her artistic achievements and offering a platform to establish creative collaborations. </p>",
+      "links": [
+        {
+          "title": "Access to the site",
+          "path": "https://feedencre.com/"
+        }
+      ],
+      "colorDark": {
+        "primary": "#c1c79a",
+        "gradientEllipseLeft": "#c1c79a",
+        "gradientCircleRight": "#c1c79a",
+        "gradientEllipse1Right": "#c1c79a",
+        "gradientEllipse2Right": "#c1c79a"
+      },
+      "colorLight": {
+        "primary": "#636b3a",
+        "gradientEllipseLeft": "#636b3a",
+        "gradientCircleRight": "#636b3a",
+        "gradientEllipse1Right": "#636b3a",
+        "gradientEllipse2Right": "#636b3a"
+      },
+      "category": "PWA Application",
+      "year": "2024",
+      "company": "Fée d'encre",
+      "works": ["End-to-end design"],
+      "participants": ["Myself", "Fée d'encre"],
+      "personal": true,
+      "tech": ["VUE.JS 3", "QUASAR", "WORKBOX", "HTML", "SCSS", "TYPESCRIPT"]
+    },
+    {
+      "label": "Maths United",
+      "name": "mathsUnited",
+      "desc": "<p>Maths United is an online platform dedicated to learning mathematics. It offers two main services: online resources to allow students to work independently through complete courses, classified exercises, control examples, and revision sheets; and private lessons that allow beneficiaries of personalized teaching at a distance, dispensed by experienced teachers.</p><p>The objective of Maths United is to simplify and enrich the learning of mathematics, while fostering a close connection between students and teachers.</p>",
+      "links": [
+        {
+          "title": "Access to the site",
+          "path": "https://maths-united.com"
+        }
+      ],
+      "colorDark": {
+        "primary": "#F6B26D",
+        "gradientEllipseLeft": "#F6B26D",
+        "gradientCircleRight": "#12805B",
+        "gradientEllipse1Right": "#12805B",
+        "gradientEllipse2Right": "#064252"
+      },
+      "colorLight": {
+        "primary": "#12805B",
+        "gradientEllipseLeft": "#F6B26D",
+        "gradientCircleRight": "#12805B",
+        "gradientEllipse1Right": "#12805B",
+        "gradientEllipse2Right": "#064252"
+      },
+      "category": "PWA Application",
+      "year": "2023-2024",
+      "company": "Maths united",
+      "works": ["End-to-end design"],
+      "participants": ["Myself", "Maths united"],
+      "personal": false,
+      "tech": [
+        "VUE.JS",
+        "QUASAR",
+        "WORKBOX",
+        "HTML",
+        "SCSS",
+        "TYPESCRIPT",
+        "PINIA",
+        "FIREBASE"
+      ]
+    },
+    {
+      "label": "Logbook",
+      "name": "logbook",
+      "desc": "<p>Logbook is a multi-platform application serving as a centralized menu for larp role-playing games. It allows players to track and manage their progress, including character skills and archetypes, quests in progress, and inventories. Users can customize their profile, view detailed information about their character, such as race, clan, and allies, and keep track of discovered locations, gold pieces collected, and completed instances.</p> <p>The application provides a smooth and dynamic game management experience, making it easy to access essential information for game sessions. It also enhances the gaming experience by offering players a practical tool to track their progress, collaborate with allies, and make strategic decisions in real-time.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#8A6E4E",
+        "gradientEllipseLeft": "#8A6E4E",
+        "gradientCircleRight": "#8A6E4E",
+        "gradientEllipse1Right": "#f1f3f3",
+        "gradientEllipse2Right": "#f1f3f3"
+      },
+      "colorLight": {
+        "primary": "#8A6E4E",
+        "gradientEllipseLeft": "#8A6E4E",
+        "gradientCircleRight": "#8A6E4E",
+        "gradientEllipse1Right": "#000000",
+        "gradientEllipse2Right": "#000000"
+      },
+      "category": "PWA Application",
+      "year": "2022-2023",
+      "company": "/",
+      "works": ["End-to-end design"],
+      "participants": ["Myself only"],
+      "personal": false,
+      "tech": [
+        "VUE.JS 3",
+        "QUASAR",
+        "WORKBOX",
+        "HTML",
+        "SCSS",
+        "TYPESCRIPT",
+        "PINIA",
+        "FIREBASE"
+      ]
+    },
+    {
+      "label": "Sympathy",
+      "name": "sympathy",
+      "desc": "<p>Sympathy is a mobile application designed to track real-time cryptocurrency portfolio performance, offering an intuitive interface to monitor crypto wallet performance. The main screen displays the global wallet balance, accompanied by a graph showing portfolio variations and profits over time.</p> <p>It allows you to see yield predictions for the year and lists the chosen cryptocurrencies with all their information.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#94D084",
+        "gradientEllipseLeft": "#94D084",
+        "gradientCircleRight": "#94D084",
+        "gradientEllipse1Right": "#94D084",
+        "gradientEllipse2Right": "#94D084"
+      },
+      "colorLight": {
+        "primary": "#145342",
+        "gradientEllipseLeft": "#145342",
+        "gradientCircleRight": "#145342",
+        "gradientEllipse1Right": "#145342",
+        "gradientEllipse2Right": "#145342"
+      },
+      "category": "Mobile Application",
+      "year": "2021",
+      "company": "/",
+      "works": ["End-to-end design"],
+      "participants": ["Myself only"],
+      "personal": true,
+      "tech": [
+        "VUE.JS 3",
+        "QUASAR",
+        "CAPACITOR",
+        "HTML",
+        "SCSS",
+        "JAVASCRIPT",
+        "VUEX"
+      ]
+    },
+    {
+      "label": "For season",
+      "name": "forSeason",
+      "desc": "<p>For Season is a complete multi-platform application that allowed me to discover all the nutrients available according to the seasons, access detailed information about their nutritional value, and find recipes adapted to the ingredients. In addition, the application allows you to easily create and manage a shopping list, by directly adding the ingredients necessary for the selected recipes.</p> <p>This application allowed me to accompany me daily to plan nutritious and delicious meals, while taking into account the seasonal availability of products.</p>",
+      "links": [
+        {
+          "title": "Access to the site",
+          "path": "https://www.design.neoledge.com"
+        }
+      ],
+      "colorDark": {
+        "primary": "#CD9050",
+        "gradientEllipseLeft": "#C2DD66",
+        "gradientCircleRight": "#C53D1A",
+        "gradientEllipse1Right": "#F3BD13",
+        "gradientEllipse2Right": "#F57B3C"
+      },
+      "colorLight": {
+        "primary": "#78150B",
+        "gradientEllipseLeft": "#C2DD66",
+        "gradientCircleRight": "#C53D1A",
+        "gradientEllipse1Right": "#F3BD13",
+        "gradientEllipse2Right": "#F57B3C"
+      },
+      "category": "PWA Application",
+      "year": "2021",
+      "company": "/",
+      "works": ["End-to-end design"],
+      "participants": ["Myself only"],
+      "personal": true,
+      "tech": [
+        "VUE.JS 2",
+        "QUASAR",
+        "WORKBOX",
+        "HTML",
+        "SCSS",
+        "JAVASCRIPT",
+        "VUEX"
+      ]
+    },
+    {
+      "label": "Portail de notification",
+      "name": "portailDeNotification",
+      "desc": "<p>Portail Notification is an application dedicated to managing event notifications and message templates. It offers an intuitive and performant interface for users connected via a Delta Dore account (B2B authentication).</p><p>The application allows users to manage user experiences by centralizing associated notifications. Users can list, create, edit, and delete events to respond to their specific needs. In addition, it offers complete management of message templates, including the ability to list, create, modify, duplicate, or delete templates to ensure appropriate and organized communication.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#C5D76A",
+        "gradientEllipseLeft": "#92C256",
+        "gradientCircleRight": "#C5D76A",
+        "gradientEllipse1Right": "#24AD8D",
+        "gradientEllipse2Right": "#1F756B"
+      },
+      "colorLight": {
+        "primary": "#1F756B",
+        "gradientEllipseLeft": "#92C256",
+        "gradientCircleRight": "#C5D76A",
+        "gradientEllipse1Right": "#24AD8D",
+        "gradientEllipse2Right": "#1F756B"
+      },
+      "category": "PWA Application",
+      "year": "2021",
+      "company": "Delta Dore",
+      "works": ["Studies", "Developments"],
+      "participants": ["Myself, 1 Back-End developer"],
+      "personal": true,
+      "tech": [
+        "VUE.JS 2",
+        "QUASAR",
+        "WORKBOX",
+        "HTML",
+        "SCSS",
+        "JAVASCRIPT",
+        "VUEX",
+        ".NET",
+        "C#"
+      ]
+    },
+    {
+      "label": "Remake home VR/AR",
+      "name": "remakeHome",
+      "desc": "<p>During the COVID-19 confinement, I transformed my apartment into an experimental ground for mixed reality by using my Oculus Quest headset. My idea was to model my home at a 1:1 scale, then walk around it while virtually modifying the environment.</p> <p>This was both a way to learn a bit more about mixed reality development and to make the confinement a bit more bearable. This project was a fun way to play with the limited space of my apartment while exploring the infinite possibilities of mixed reality.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#786729",
+        "gradientEllipseLeft": "#552F02",
+        "gradientCircleRight": "#552F02",
+        "gradientEllipse1Right": "#552F02",
+        "gradientEllipse2Right": "#552F02"
+      },
+      "colorLight": {
+        "primary": "#725C17",
+        "gradientEllipseLeft": "#552F02",
+        "gradientCircleRight": "#552F02",
+        "gradientEllipse1Right": "#552F02",
+        "gradientEllipse2Right": "#552F02"
+      },
+      "category": "VR / AR",
+      "year": "2020",
+      "company": "/",
+      "works": ["End-to-end design"],
+      "participants": ["Myself only"],
+      "personal": true,
+      "tech": ["UNITY", "C#", "BLENDER"]
+    },
+    {
+      "label": "LGO2 Alert",
+      "name": "lgo2Alert",
+      "desc": "<p>LGO2 Alert is an application designed to facilitate the creation and management of alerts and communications to destination members or professionals. It allows centralizing and organizing important messages by offering a clear and intuitive interface adapted to Giphar's needs.</p><p>The application offers the possibility to define alerts with a title, a message type and a personalized content, ensuring targeted and effective communication. It integrates advanced filters to segment recipients based on specific criteria, such as services, equipment or specific data. Users can also schedule alert sending through programming features, choosing a specific date and time.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#F2C037",
+        "gradientEllipseLeft": "#579C3F",
+        "gradientCircleRight": "#F2C037",
+        "gradientEllipse1Right": "#02432B",
+        "gradientEllipse2Right": "#02432B"
+      },
+      "colorLight": {
+        "primary": "#51B29E",
+        "gradientEllipseLeft": "#579C3F",
+        "gradientCircleRight": "#F2C037",
+        "gradientEllipse1Right": "#02432B",
+        "gradientEllipse2Right": "#02432B"
+      },
+      "category": "Web application",
+      "year": "2020",
+      "company": "Giphar",
+      "works": ["Studies", "Developments"],
+      "participants": ["Myself, 1 Back-End developer"],
+      "personal": false,
+      "tech": [
+        "VUE.JS 2",
+        "QUASAR",
+        "ELECTRON",
+        "HTML",
+        "SCSS",
+        "JAVASCRIPT",
+        "VUEX"
+      ]
+    },
+    {
+      "label": "Planning Auchan Drive",
+      "name": "pgAuchanDrive",
+      "desc": "<p>Planning Auchan Drive is an application specially designed to help coordinators manage the schedules of drivers efficiently by making team coordination intuitive, fast, and reliable. It offers a clear and structured visual support to plan working hours, breaks, absences, and other tasks, while maintaining a detailed history of data.</p><p>The application provides an overview of schedules, allowing optimal resource organization. Coordinators can easily adjust schedules based on operational needs by adding or modifying time slots, while having complete traceability of all modifications. The system also highlights periods of availability and unavailability of drivers, simplifying the management of absences and unexpected events.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#10974B",
+        "gradientEllipseLeft": "#E1001A",
+        "gradientCircleRight": "#10974B",
+        "gradientEllipse1Right": "#720F2B",
+        "gradientEllipse2Right": "#720F2B"
+      },
+      "colorLight": {
+        "primary": "#10974B",
+        "gradientEllipseLeft": "#E1001A",
+        "gradientCircleRight": "#10974B",
+        "gradientEllipse1Right": "#720F2B",
+        "gradientEllipse2Right": "#720F2B"
+      },
+      "category": "Web application",
+      "year": "2019",
+      "company": "Auchan",
+      "works": ["End-to-end design"],
+      "participants": ["Myself, Auchan Drive Louvroil"],
+      "personal": false,
+      "tech": [
+        "VUE.JS 2",
+        "QUASAR",
+        "ELECTRON",
+        "HTML",
+        "SCSS",
+        "JAVASCRIPT",
+        "VUEX"
+      ]
+    },
+    {
+      "label": "Running",
+      "name": "running",
+      "desc": "<p>Running is an application dedicated to managing cross races of the UNSS (Union Nationale du Sport Scolaire), offering a simple and performant interface to organize and follow competitions. It allows organizers to efficiently manage participants, enroll them in final rankings, and ensure a smooth and centralized process.</p><p>The application facilitates the import and export of participant data, allowing for quick and reliable information entry. Users can view and modify competitor details, manage categories, identify and resolve duplicates or errors, and generate rankings in just a few clicks. The interface also provides verification tools to detect anomalies such as category errors or missing data, ensuring the accuracy of results.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#D2CAD0",
+        "gradientEllipseLeft": "#877881",
+        "gradientCircleRight": "#877881",
+        "gradientEllipse1Right": "#720F2B",
+        "gradientEllipse2Right": "#720F2B"
+      },
+      "colorLight": {
+        "primary": "#720F2B",
+        "gradientEllipseLeft": "#584552",
+        "gradientCircleRight": "#584552",
+        "gradientEllipse1Right": "#720F2B",
+        "gradientEllipse2Right": "#720F2B"
+      },
+      "category": "Desktop application",
+      "year": "2019",
+      "company": "UNSS",
+      "works": ["End-to-end design"],
+      "participants": ["Myself", "UNSS"],
+      "personal": false,
+      "tech": [".NET", "C#", "Windows Forms", "Microsoft Access"]
+    },
+    {
+      "label": "Comunity",
+      "name": "comunity",
+      "desc": "<p>Comunity is an HRMS (Human Resources Management System) application designed to simplify and centralize human resource management within an organization. Intuitive and versatile, it offers a range of features to respond to the needs of employees and administrators, while ensuring a smooth and efficient user experience.</p><p>In the context of this project, I contributed to the overall management and tracking, actively participating in decisions regarding the user interface (UI) and user experience (UX). This contribution allowed the development of an application that is both functional, ergonomic, and adapted to users' expectations. With Comunity, HR processes are digitalized and simplified, optimizing workflow processes and reinforcing employee engagement.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#A6A6A6",
+        "gradientEllipseLeft": "#A6A6A6",
+        "gradientCircleRight": "#7A0000",
+        "gradientEllipse1Right": "#7A0000",
+        "gradientEllipse2Right": "#A6A6A6"
+      },
+      "colorLight": {
+        "primary": "#A6A6A6",
+        "gradientEllipseLeft": "#A6A6A6",
+        "gradientCircleRight": "#7A0000",
+        "gradientEllipse1Right": "#7A0000",
+        "gradientEllipse2Right": "#A6A6A6"
+      },
+      "category": "Project management",
+      "year": "2018",
+      "company": "Vinci Energies",
+      "works": ["Studies", "Project management", "UI/UX"],
+      "participants": [
+        "Management",
+        "HR Department",
+        "Accounting Department",
+        "External developers"
+      ],
+      "personal": false,
+      "tech": []
+    },
+    {
+      "label": "Distance de séparation foudre",
+      "name": "dsf",
+      "desc": "<p>This application is a specialized tool designed to calculate and define the lightning separation distance in accordance with IEC 62305 and NFC 17-102 standards. It aims to simplify and automate the process of ensuring compliance with lightning protection installations, offering precise and rapid calculations, essential for engineers and technicians working in lightning protection.</p><p>The application allows you to enter specific installation parameters, such as structure characteristics, materials, protection levels required, and conductor dimensions. Based on these data, it automatically calculates the optimal separation distance to prevent electrical arcs between internal conductors and lightning protection devices.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#509DA8",
+        "gradientEllipseLeft": "#509DA8",
+        "gradientCircleRight": "#509DA8",
+        "gradientEllipse1Right": "#4B5D6C",
+        "gradientEllipse2Right": "#4B5D6C"
+      },
+      "colorLight": {
+        "primary": "#509DA8",
+        "gradientEllipseLeft": "#509DA8",
+        "gradientCircleRight": "#509DA8",
+        "gradientEllipse1Right": "#4B5D6C",
+        "gradientEllipse2Right": "#4B5D6C"
+      },
+      "category": "Desktop application",
+      "year": "2018",
+      "company": "Vinci Energies",
+      "works": ["End-to-end design"],
+      "participants": ["Myself"],
+      "personal": false,
+      "tech": [".NET", "C#", "Windows Forms", "Microsoft Access"]
+    },
+    {
+      "label": "Cam config",
+      "name": "cameraConfiguration",
+      "desc": "<p>Cam config is a desktop application to help members of the study team at Actemium Petite Forêt. This application is dedicated to the configuration and optimization of camera surveillance systems. It allows defining camera parameters, such as viewing angle, resolution, and distance, while evaluating identification quality according to surveillance conditions.</p><p>The application helps configure power, bandwidth, and recording duration, thus facilitating the planning and management of security installations.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#A48EA3",
+        "gradientEllipseLeft": "#734794",
+        "gradientCircleRight": "#A48EA3",
+        "gradientEllipse1Right": "#6988A4",
+        "gradientEllipse2Right": "#6988A4"
+      },
+      "colorLight": {
+        "primary": "#734794",
+        "gradientEllipseLeft": "#734794",
+        "gradientCircleRight": "#A48EA3",
+        "gradientEllipse1Right": "#6988A4",
+        "gradientEllipse2Right": "#6988A4"
+      },
+      "category": "Desktop application",
+      "year": "2017",
+      "company": "Vinci Energies",
+      "works": ["End-to-end design"],
+      "participants": ["Myself"],
+      "personal": false,
+      "tech": [".NET", "C#", "Windows Forms", "Microsoft Access"]
+    },
+    {
+      "label": "VPR Pipeline",
+      "name": "vpr",
+      "desc": "<p>VPR Pipeline is a desktop application designed to facilitate periodic gas pipeline inspections. It allows planning and tracking inspections, maintaining detailed verification records, and generating QR codes for quick identification of pipelines.</p> <p>The objective of this application was to reduce dependency on paper-based processes and ensure better traceability and regulatory compliance.</p>",
+      "links": [],
+      "colorDark": {
+        "primary": "#0584B4",
+        "gradientEllipseLeft": "#0584B4",
+        "gradientCircleRight": "#000C3E",
+        "gradientEllipse1Right": "#477181",
+        "gradientEllipse2Right": "#477181"
+      },
+      "colorLight": {
+        "primary": "#000C3E",
+        "gradientEllipseLeft": "#0584B4",
+        "gradientCircleRight": "#000C3E",
+        "gradientEllipse1Right": "#477181",
+        "gradientEllipse2Right": "#477181"
+      },
+      "category": "Desktop application",
+      "year": "2017",
+      "company": "Vinci Energies",
+      "works": ["End-to-end design"],
+      "participants": ["Myself"],
+      "personal": false,
+      "tech": [".NET", "C#", "Windows Forms", "Microsoft Access"]
+    }
+  ]
+}

@@ -103,7 +103,7 @@
       ]
     },
     {
-      "label": "Testing",
+      "label": "Tests",
       "visible": false,
       "tools": [
         {
@@ -121,15 +121,15 @@
       ]
     },
     {
-      "label": "Database",
+      "label": "Base de données",
       "visible": false,
       "tools": [
         {
-          "label": "Sql server",
+          "label": "SQL Server",
           "picture": "sqlServer"
         },
         {
-          "label": "Postegre Sql",
+          "label": "PostgreSQL",
           "picture": "postgreSql"
         },
         {

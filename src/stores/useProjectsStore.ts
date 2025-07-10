@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+import { i18n } from '../boot/i18n';
 
 import { Project } from 'src/models/interfaces/projects';
 
@@ -8,11 +9,17 @@ export const useProjectsStore = defineStore('projects', {
   }),
   actions: {
     async getProjects() {
+      const currentLocale = i18n.global.locale.value;
+      const projectsFile = `/projects-${currentLocale.substring(0, 2)}.json`;
+
       return new Promise<void>((resolve, reject) => {
-        fetch('/projects.json')
+        fetch(projectsFile)
+          .then((response) => {
+            return response;
+          })
           .then((response) => {
             if (!response.ok) {
-              throw new Error('Erreur lors du chargement du fichier JSON');
+              throw new Error('Error loading JSON file');
             }
             return response.json();
           })
@@ -21,7 +28,7 @@ export const useProjectsStore = defineStore('projects', {
             return resolve();
           })
           .catch((error) => {
-            console.error('Erreur:', error);
+            console.error('Error:', error);
             return reject();
           });
       });

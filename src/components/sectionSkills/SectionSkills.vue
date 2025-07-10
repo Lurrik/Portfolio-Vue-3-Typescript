@@ -2,9 +2,9 @@
   <div class="section-skills flex justify-center">
     <div class="col-8 column">
       <div class="text-center flex column no-wrap">
-        <h3 class="q-mb-md text-primary">Expertises</h3>
+        <h3 class="q-mb-md text-primary">{{ t('skills.title') }}</h3>
         <span class="text-grey text-subtitle1">
-          Liste des outils de développement
+          {{ t('skills.subtitle') }}
         </span>
         <q-separator class="q-my-md" inset />
       </div>
@@ -28,9 +28,12 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
 import SectionSkillsCard from '@/components/sectionSkills/SectionSkillsCard.vue';
 
-import { useSkillsStore } from 'stores/useSkillsStore';
+import { useSkillsStore } from '../../stores/useSkillsStore';
+
+const { t } = useI18n();
 
 defineProps({
   noAnimation: {

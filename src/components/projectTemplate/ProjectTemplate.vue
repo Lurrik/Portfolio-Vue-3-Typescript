@@ -16,19 +16,19 @@
           ></div>
           <div class="col-lg-6 col-sm-6 col-xs-12 column">
             <div class="row items-baseline gap-8">
-              <h6 class="text-primary col-4">CATEGORIE</h6>
+              <h6 class="text-primary col-4">{{ t('project.category') }}</h6>
               <div class="text-h6 col-6" :class="classJustifyList">
                 <span>{{ project.category }}</span>
               </div>
             </div>
             <div class="row items-baseline gap-8">
-              <h6 class="text-primary col-4">ANNEE</h6>
+              <h6 class="text-primary col-4">{{ t('project.year') }}</h6>
               <div class="row text-h6 col-6" :class="classJustify">
                 <span>{{ project.year }}</span>
               </div>
             </div>
             <div class="row items-baseline gap-8">
-              <h6 class="text-primary col-4">ENTREPRISE</h6>
+              <h6 class="text-primary col-4">{{ t('project.company') }}</h6>
               <div class="row text-h6 col-6" :class="classJustify">
                 <span>{{ project.company }}</span>
               </div>
@@ -36,7 +36,7 @@
           </div>
           <div class="col-lg-6 col-sm-6 col-xs-12 column">
             <div class="row items-baseline gap-8 max-height-180">
-              <h6 class="text-primary col-4">TRAVAUX</h6>
+              <h6 class="text-primary col-4">{{ t('project.works') }}</h6>
               <div class="text-h6 col-6 line-height" :class="classJustifyList">
                 <span
                   v-for="(work, index) in project.works"
@@ -49,7 +49,9 @@
               </div>
             </div>
             <div class="row items-baseline gap-8">
-              <h6 class="text-primary col-4">PARTICIPANTS</h6>
+              <h6 class="text-primary col-4">
+                {{ t('project.participants') }}
+              </h6>
               <div class="text-h6 col-6 line-height" :class="classJustifyList">
                 <span
                   v-for="(participant, index) in project.participants"
@@ -93,7 +95,7 @@
       @click="back"
     >
       <q-tooltip class="bg-transparent text-primary text-subtitle2">
-        Retour
+        {{ t('project.back') }}
       </q-tooltip>
     </q-btn>
   </q-page>
@@ -101,6 +103,7 @@
 
 <script setup lang="ts">
 import { ref, computed, watch, onUnmounted } from 'vue';
+import { useI18n } from 'vue-i18n';
 import { useQuasar, getCssVar, setCssVar } from 'quasar';
 import { useRouter } from 'vue-router';
 import { useMotion } from '@vueuse/motion';
@@ -114,6 +117,7 @@ interface Props {
 const props = defineProps<Props>();
 
 const $q = useQuasar();
+const { t } = useI18n();
 const router = useRouter();
 const projectLogo = ref<HTMLElement>();
 

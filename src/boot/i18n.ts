@@ -1,7 +1,7 @@
 import { boot } from 'quasar/wrappers';
 import { createI18n } from 'vue-i18n';
 
-import messages from 'src/i18n';
+import messages from '../i18n';
 
 export type MessageLanguages = keyof typeof messages;
 // Type-define 'en-US' as the master schema for the resource
@@ -21,13 +21,21 @@ declare module 'vue-i18n' {
 }
 /* eslint-enable @typescript-eslint/no-empty-interface */
 
-export default boot(({ app }) => {
-  const i18n = createI18n({
-    locale: 'en-US',
-    legacy: false,
-    messages,
-  });
+// Déterminer la langue par défaut (navigateur ou fallback sur en-US)
+const defaultLocale = () => {
+  const browserLang = navigator.language;
+  return browserLang.startsWith('fr') ? 'fr-FR' : 'en-US';
+};
 
+// Create i18n instance
+export const i18n = createI18n({
+  locale: defaultLocale(),
+  fallbackLocale: 'en-US',
+  legacy: false,
+  messages,
+});
+
+export default boot(({ app }) => {
   // Set i18n instance on app
   app.use(i18n);
 });
