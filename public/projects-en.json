@@ -3,8 +3,13 @@
     {
       "label": "Fallout JDR",
       "name": "falloutJdr",
-      "desc": "<p>Fallout RPG is an application dedicated to tabletop role-playing in the Fallout universe, designed to offer an immersive and smooth experience to players. Each participant has a customized digital interface inspired by the famous Pip-Boy, faithful to the retro-futuristic and greenish aesthetic of the series. This interface allows everyone to consult their character's characteristics, inventory, skills, health, and much more in real-time, as if they were actually using a Pip-Boy during the adventure.</p><p>The goal of this application is to modernize and enrich paper RPG sessions while respecting Fallout's unique atmosphere. It facilitates character management and enhances immersion, thanks to an intuitive, interactive interface that is visually consistent with the game's universe. It's a tool designed for both the game master and players, to experience a more fluid, more visual, and totally customized adventure.</p>",
-      "links": [],
+      "desc": "<p>Fallout JDR is an application dedicated to tabletop role-playing in the Fallout universe, based on <a href=\"https://www.arkhane-asylum.fr/shop/Fallout/\" target=\"_blank\">the official rules published by Arkhane Asylum</a>, designed to offer an immersive and smooth experience to players. Each participant has a customized digital interface inspired by the famous Pip-Boy, faithful to the retro-futuristic and greenish aesthetic of the series. This interface allows everyone to consult their character's characteristics, inventory, skills, health, and much more in real-time, as if they were actually using a Pip-Boy during the adventure.</p><p>The goal of this application is to modernize and enrich paper RPG sessions while respecting Fallout's unique atmosphere. It facilitates character management and enhances immersion, thanks to an intuitive, interactive interface that is visually consistent with the game's universe. It's a tool designed for both the game master and players, to experience a more fluid, more visual, and totally customized adventure.</p>",
+      "links": [
+        {
+          "title": "Official Rules - Arkhane Asylum",
+          "path": "https://www.arkhane-asylum.fr/shop/Fallout/"
+        }
+      ],
       "colorDark": {
         "primary": "#5AB042",
         "gradientEllipseLeft": "#1ED81E",

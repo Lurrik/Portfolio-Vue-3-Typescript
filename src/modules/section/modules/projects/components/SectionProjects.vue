@@ -14,7 +14,7 @@
 import { useI18n } from 'vue-i18n';
 
 import SectionHeader from '@/modules/section/components/SectionHeader.vue';
-import SectionProjectsList from './SectionProjectsList.vue';
+import SectionProjectsList from './list/SectionProjectsList.vue';
 
 const { t } = useI18n();
 

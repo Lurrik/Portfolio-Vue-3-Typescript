@@ -5,7 +5,7 @@
       <RouterView v-slot="{ Component }">
         <template v-if="Component">
           <Transition mode="fade" :duration="550">
-            <KeepAlive :include="['ProjectsView']">
+            <KeepAlive :include="['SectionProjectsView']">
               <component :is="Component" no-animation></component>
             </KeepAlive>
           </Transition>

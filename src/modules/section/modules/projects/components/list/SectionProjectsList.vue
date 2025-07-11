@@ -57,9 +57,9 @@ import { useI18n } from 'vue-i18n';
 
 import SectionProjectsListItem from './SectionProjectsListItem.vue';
 
-import { useProjectsStore } from '../stores/useProjectsStore';
+import { useProjectsStore } from '../../stores/useProjectsStore';
 
-import type { Project } from '@/modules/section/modules/projects/models/interfaces/projects';
+import type { Project } from '../../models/interfaces/projects';
 
 interface Props {
   navigateFromHome: boolean;

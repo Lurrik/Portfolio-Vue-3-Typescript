@@ -1,3 +1,5 @@
+import falloutJdr from './falloutJdr';
+
 export default {
   title: 'Projets',
   subtitle: 'Expérience professionnelle',
@@ -6,6 +8,7 @@ export default {
     professional: 'Professionnel',
     personal: 'Personnel',
   },
+  showMore: 'Voir plus de projets',
   template: {
     category: 'CATÉGORIE',
     year: 'ANNÉE',
@@ -14,5 +17,5 @@ export default {
     participants: 'PARTICIPANTS',
     back: 'Retour',
   },
-  showMore: 'Voir plus de projets',
+  falloutJdr,
 };

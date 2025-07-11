@@ -97,6 +97,11 @@
         </div>
       </div>
     </div>
+    <div class="row flex-center full-width q-pt-xl">
+      <div class="column width-80">
+        <slot></slot>
+      </div>
+    </div>
     <q-btn
       class="back-button text-primary q-ma-md large-screen-only"
       icon="fa fa-arrow-left"
@@ -116,7 +121,7 @@ import { useQuasar, getCssVar, setCssVar } from 'quasar';
 import { useRouter } from 'vue-router';
 import { useMotion } from '@vueuse/motion';
 
-import type { Project } from 'src/models/interfaces/projects';
+import type { Project } from '../../models/interfaces/projects';
 
 interface Props {
   project: Project;
@@ -270,6 +275,19 @@ onUnmounted(() => {
     position: fixed;
     top: 50px;
     left: 12px;
+  }
+
+  :deep(.text-body1) {
+    a {
+      color: var(--q-primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
   }
 }
 </style>
