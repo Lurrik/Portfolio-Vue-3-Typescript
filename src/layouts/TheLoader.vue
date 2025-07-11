@@ -16,7 +16,7 @@ import { computed } from 'vue';
 import { Dark } from 'quasar';
 
 import TheLogo from '@/layouts/TheLogo.vue';
-import BackgroundGradientCenter from '@/components/backgroundGradient/BackgroundGradientCenter.vue';
+import BackgroundGradientCenter from '@/core/components/backgroundGradient/BackgroundGradientCenter.vue';
 
 const classLight = computed<string[]>(() => {
   return ['bg-white', 'text-black'];

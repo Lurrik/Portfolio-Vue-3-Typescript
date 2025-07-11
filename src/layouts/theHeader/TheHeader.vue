@@ -9,7 +9,7 @@
 
       <div class="flex items-center">
         <!-- Language toggle -->
-        <language-toggle />
+        <the-header-language-toggle />
 
         <!-- Dark mode toggle -->
         <q-toggle
@@ -30,16 +30,16 @@ import { useI18n } from 'vue-i18n';
 import { useRoute, RouterLink } from 'vue-router';
 import { useQuasar } from 'quasar';
 
-import { useSettingsStore } from '../../stores/useSettingsStore';
+import TheLogo from '../TheLogo.vue';
+import TheHeaderNavigation from './TheHeaderNavigation.vue';
+import TheHeaderLanguageToggle from './TheHeaderLanguageToggle.vue';
 
-import TheLogo from '@/layouts/TheLogo.vue';
-import TheHeaderNavigation from '@/layouts/theHeader/TheHeaderNavigation.vue';
-import LanguageToggle from '@/components/common/LanguageToggle.vue';
+import { useSettingsStore } from '@/core/stores/useSettingsStore';
 
 const route = useRoute();
 const $q = useQuasar();
 const settingsStore = useSettingsStore();
-const { t, locale } = useI18n();
+const { locale } = useI18n();
 
 const showNavigation = ref<boolean>(false);
 
@@ -62,11 +62,6 @@ let DarkMode = computed<boolean>({
 
 const currentLanguage = ref<string>(locale.value);
 
-function onLanguageToggle(value: string): void {
-  settingsStore.setLanguage(value as 'en-US' | 'fr-FR');
-}
-
-// Mettre à jour le toggle quand la langue change ailleurs dans l'application
 watch(locale, (newLocale) => {
   currentLanguage.value = newLocale;
 });

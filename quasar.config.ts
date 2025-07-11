@@ -60,8 +60,6 @@ export default configure((ctx) => {
 
       alias: {
         '@': fileURLToPath(new URL('./src', import.meta.url)),
-        stores: fileURLToPath(new URL('./src/stores', import.meta.url)),
-        models: fileURLToPath(new URL('./src/models', import.meta.url)),
       },
       // vueRouterBase,
       // vueDevtools,

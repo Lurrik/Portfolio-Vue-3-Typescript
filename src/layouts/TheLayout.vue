@@ -27,15 +27,16 @@
 import { computed } from 'vue';
 import { useRouter } from 'vue-router';
 import { useQuasar } from 'quasar';
-import { useProjectsStore } from 'stores/useProjectsStore';
-import { useSkillsStore } from 'stores/useSkillsStore';
 
-import TheHeader from '@/layouts/theHeader/TheHeader.vue';
-import TheFooter from '@/layouts/theFooter/TheFooter.vue';
-import TheFooterNavigation from '@/layouts/theFooter/TheFooterNavigation.vue';
-import BackgroundGradient from '@/components/backgroundGradient/BackgroundGradient.vue';
+import TheHeader from './theHeader/TheHeader.vue';
+import TheFooter from './theFooter/TheFooter.vue';
+import TheFooterNavigation from './theFooter/TheFooterNavigation.vue';
+import BackgroundGradient from '@/core/components/backgroundGradient/BackgroundGradient.vue';
 
-import type { Project } from 'src/models/interfaces/projects';
+import { useProjectsStore } from '@/modules/section/modules/projects/stores/useProjectsStore';
+import { useSkillsStore } from '@/modules/section/modules/skills/stores/useSkillsStore';
+
+import type { Project } from '@/modules/section/modules/projects/models/interfaces/projects';
 
 const $q = useQuasar();
 const router = useRouter();
@@ -59,7 +60,10 @@ async function generateRoute(): Promise<void> {
     router.addRoute('projectsView', {
       name: project.name,
       path: project.name,
-      component: () => import('../views/ProjectDynamicView.vue'),
+      component: () =>
+        import(
+          '../modules/section/modules/projects/views/SectionProjectsDynamicView.vue'
+        ),
     });
   });
 }

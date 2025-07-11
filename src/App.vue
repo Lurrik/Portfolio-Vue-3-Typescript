@@ -20,7 +20,7 @@ import { Dark } from 'quasar';
 
 import TheLoader from '@/layouts/TheLoader.vue';
 
-import { useSettingsStore } from 'stores/useSettingsStore';
+import { useSettingsStore } from '@/core/stores/useSettingsStore';
 
 const settingsStore = useSettingsStore();
 
