@@ -3,7 +3,7 @@
     <the-header />
 
     <the-footer-navigation
-      v-if="isScreenMobile"
+      v-if="isScreenMobile && route.name === 'home'"
       class="footer-buttons small-screen-only"
     />
 
@@ -12,8 +12,8 @@
       <RouterView v-slot="{ Component }">
         <template v-if="Component">
           <Transition mode="out-in">
-            <KeepAlive :include="['HomeView']">
-              <component :is="Component" no-animation></component>
+            <KeepAlive :include="['SectionHomeView']">
+              <component :is="Component" />
             </KeepAlive>
           </Transition>
         </template>
@@ -25,7 +25,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useRouter } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import { useQuasar } from 'quasar';
 
 import TheHeader from './theHeader/TheHeader.vue';
@@ -39,6 +39,7 @@ import { useSkillsStore } from '@/modules/section/modules/skills/stores/useSkill
 import type { Project } from '@/modules/section/modules/projects/models/interfaces/projects';
 
 const $q = useQuasar();
+const route = useRoute();
 const router = useRouter();
 const projectStore = useProjectsStore();
 const skillsStore = useSkillsStore();

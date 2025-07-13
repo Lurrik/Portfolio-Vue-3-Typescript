@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineAsyncComponent, computed, type Component } from 'vue';
+import { defineAsyncComponent, computed, onMounted, type Component } from 'vue';
 import { useRoute } from 'vue-router';
 
 import SectionProjectsTemplate from '../components/template/SectionProjectsTemplate.vue';
@@ -31,5 +31,9 @@ const project = computed<Project | null>(() => {
   return projectStore.projects.filter(
     (project: Project) => project.name === route.name,
   )[0];
+});
+
+onMounted(() => {
+  window.scrollTo({ top: 0 });
 });
 </script>

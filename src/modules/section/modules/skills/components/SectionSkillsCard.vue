@@ -1,7 +1,7 @@
 <template>
   <q-card
     v-if="skill"
-    class="section-skills-card q-ma-md"
+    class="section-skills-card q-ma-sm"
     :class="{ 'dark-mode': isDarkMode }"
   >
     <div class="card-header">
@@ -63,7 +63,6 @@ function skillPicture(picture: string) {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  margin-bottom: 1.5rem;
   background: transparent;
 
   &.dark-mode {
@@ -79,7 +78,7 @@ function skillPicture(picture: string) {
     display: flex;
     align-items: center;
     padding: 1.25rem;
-    background: linear-gradient(135deg, var(--q-primary) 0%, transparent 100%);
+    background: var(--q-primary);
     color: white;
 
     .header-icon {

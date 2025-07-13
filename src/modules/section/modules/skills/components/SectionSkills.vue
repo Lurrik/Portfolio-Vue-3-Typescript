@@ -1,11 +1,11 @@
 <template>
-  <div class="section-skills flex justify-center">
+  <div class="section-skills flex justify-center q-py-xl">
     <div class="col-8 column">
       <section-header
         :title="t('skills.title')"
         :subtitle="t('skills.subtitle')"
       />
-      <div class="list row justify-center q-pb-xl">
+      <div class="list row justify-center">
         <div
           v-for="(skill, index) in skillsStore.skills"
           :key="index"

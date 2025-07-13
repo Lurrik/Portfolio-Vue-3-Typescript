@@ -283,11 +283,7 @@ const professionalInfo: Record<string, InfoItem> = {
       display: flex;
       align-items: center;
       padding: 1.25rem 1.5rem;
-      background: linear-gradient(
-        135deg,
-        var(--q-primary) 0%,
-        transparent 100%
-      );
+      background: var(--q-primary);
       color: white;
 
       .header-icon {
@@ -406,7 +402,6 @@ const professionalInfo: Record<string, InfoItem> = {
   // Responsive adjustments
   @media (max-width: 767px) {
     .info-card {
-      margin-bottom: 1.5rem;
       width: 100%;
       max-width: 100%;
     }

@@ -1,6 +1,6 @@
 <template>
   <q-tabs
-    v-model="tab"
+    v-model="navigationStore.activeSection"
     class="the-header-navigation"
     :breakpoint="500"
     active-color="primary"
@@ -8,48 +8,58 @@
     indicator-color="transparent"
     inline-label
   >
-    <q-route-tab
+    <q-tab
       name="home"
-      to="#home"
-      exact
-      replace
       icon="fa-solid fa-house-user"
       :label="t('navigation.home')"
+      @click="scrollToSection('home')"
     />
-    <q-route-tab
+    <q-tab
       name="about"
-      to="#about"
-      exact
-      replace
       icon="fa-solid fa-user"
       :label="t('navigation.about')"
+      @click="scrollToSection('about')"
     />
-    <q-route-tab
+    <q-tab
       name="skills"
-      to="#skills"
-      exact
-      replace
       icon="fa-solid fa-code"
       :label="t('navigation.skills')"
+      @click="scrollToSection('skills')"
     />
-    <q-route-tab
+    <q-tab
       name="projects"
-      to="#projects"
-      exact
-      replace
       icon="fa-solid fa-list-check"
       :label="t('navigation.projects')"
+      @click="scrollToSection('projects')"
     />
   </q-tabs>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n();
+import { useNavigationStore } from '@/core/stores/useNavigationStore';
+import { useScrollStore } from '@/core/stores/useScrollStore';
 
-const tab = ref('home');
+const { t } = useI18n();
+const scrollStore = useScrollStore();
+const navigationStore = useNavigationStore();
+
+function scrollToSection(sectionId: string): void {
+  navigationStore.setActiveSection(sectionId);
+
+  scrollStore.temporarilyDisableObservers();
+
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  } else {
+    scrollStore.enableObservers();
+  }
+}
 </script>
 
 <style lang="scss">

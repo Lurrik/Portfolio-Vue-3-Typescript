@@ -16,6 +16,7 @@ import BackgroundGradientRight from './BackgroundGradientRight.vue';
   top: 0;
 
   @media (max-width: $breakpoint-md-min) {
+    left: -48px;
     width: 50%;
   }
 }
@@ -25,6 +26,7 @@ import BackgroundGradientRight from './BackgroundGradientRight.vue';
   top: 0;
 
   @media (max-width: $breakpoint-md-min) {
+    right: -48px;
     width: 50%;
   }
 }

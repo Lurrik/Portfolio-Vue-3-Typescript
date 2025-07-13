@@ -1,5 +1,5 @@
 <template>
-  <div class="section-project flex justify-center">
+  <div class="section-project flex justify-center q-py-xl">
     <div class="col-8 column">
       <section-header
         :title="t('projects.title')"

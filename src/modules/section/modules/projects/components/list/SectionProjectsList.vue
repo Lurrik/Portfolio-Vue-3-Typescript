@@ -50,7 +50,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch, onActivated, onMounted } from 'vue';
+import { ref, computed, watch, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { useWindowSize } from '@vueuse/core';
 import { useI18n } from 'vue-i18n';
@@ -113,10 +113,6 @@ watch(
     setOffset();
   },
 );
-
-onActivated(() => {
-  if (selectProjectName.value) router.push(`#${selectProjectName.value}`);
-});
 
 onMounted(() => {
   setOffset();

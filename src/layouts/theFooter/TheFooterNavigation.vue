@@ -1,147 +1,97 @@
 <template>
   <q-footer class="the-footer-navigation q-mt-md" :class="classDarkMode">
-    <CurvedBottomNavigation
-      v-model="selected"
-      :options="options"
-      :foreground-color="getCssVar('primary')"
-      :background-color="backGroundColor"
-      :icon-color="iconColor"
-      @update:model-value="router.push({ name: options[$event].name })"
+    <FooterNavigation
+      :modelValue="navigationStore.activeSection"
+      :tabs="tabs"
+      @update:modelValue="navigationStore.setActiveSection($event)"
+      @section-click="scrollToSection"
     />
   </q-footer>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, watch } from 'vue';
-import { useQuasar, getCssVar } from 'quasar';
-import { useRoute, useRouter } from 'vue-router';
+import { computed } from 'vue';
+import { useQuasar } from 'quasar';
 import { useI18n } from 'vue-i18n';
 
-import { CurvedBottomNavigation } from 'bottom-navigation-vue';
-import 'bottom-navigation-vue/dist/style.css';
+import FooterNavigation from '@/core/components/FooterNavigation.vue';
+
+import { useNavigationStore } from '@/core/stores/useNavigationStore';
+import { useScrollStore } from '@/core/stores/useScrollStore';
 
 const $q = useQuasar();
-const route = useRoute();
-const router = useRouter();
 const { t } = useI18n();
+const scrollStore = useScrollStore();
+const navigationStore = useNavigationStore();
 
-enum Tab {
-  Skills = 0,
-  Home = 1,
-  Projects = 2,
-  About = 3,
-}
-
-interface Options {
-  id: Tab;
-  name: string;
-  icon: string;
-  title: string;
-}
-
-const selected = ref<number>(Tab.Home);
-
-const options = ref<Options[]>([
+const tabs = computed(() => [
   {
-    id: Tab.Skills,
-    name: 'skills',
-    icon: 'fa-solid fa-code',
-    title: t('navigation.skills'),
-  },
-  {
-    id: Tab.Home,
     name: 'home',
     icon: 'fa-solid fa-house-user',
-    title: t('navigation.home'),
+    label: t('navigation.home'),
   },
   {
-    id: Tab.Projects,
-    name: 'projects',
-    icon: 'fa-solid fa-list-check',
-    title: t('navigation.projects'),
-  },
-  {
-    id: Tab.About,
     name: 'about',
     icon: 'fa-solid fa-user',
-    title: t('navigation.about'),
+    label: t('navigation.about'),
+  },
+  {
+    name: 'skills',
+    icon: 'fa-solid fa-code',
+    label: t('navigation.skills'),
+  },
+  {
+    name: 'projects',
+    icon: 'fa-solid fa-list-check',
+    label: t('navigation.projects'),
   },
 ]);
 
 const classDarkMode = computed<string>(() => {
-  return $q.dark.isActive ? 'bg-dark' : 'bg-white';
+  return $q.dark.isActive ? 'bg-dark' : 'bg-grey-3';
 });
 
-const backGroundColor = computed<string | null>(() => {
-  return $q.dark.isActive ? getCssVar('dark') : 'white';
-});
+function scrollToSection(sectionId: string): void {
+  scrollStore.disableObservers();
 
-const iconColor = computed<string | null>(() => {
-  return $q.dark.isActive ? 'white' : getCssVar('primary');
-});
+  navigationStore.setActiveSection(sectionId);
 
-if (route.matched[1].name === 'projectsView') {
-  selected.value = Tab.Projects;
+  const element = document.getElementById(sectionId);
+
+  if (element) {
+    const offset = $q.screen.lt.sm ? 10 : 0;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+    setTimeout(() => {
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+
+      setTimeout(() => {
+        navigationStore.setActiveSection(sectionId);
+
+        const delayMs = $q.screen.lt.sm ? 1500 : 1000;
+        setTimeout(() => {
+          scrollStore.enableObservers();
+        }, delayMs);
+      }, 500);
+    }, 100);
+  } else {
+    scrollStore.enableObservers();
+  }
 }
-
-watch(
-  route,
-  (newValue, oldValue) => {
-    if (newValue.name === oldValue?.name) return;
-    switch (newValue.name) {
-      case 'home':
-        selected.value = Tab.Home;
-        break;
-      case 'projectsView':
-      case 'projects':
-        selected.value = Tab.Projects;
-        break;
-      case 'skills':
-        selected.value = Tab.Skills;
-        break;
-      case 'about':
-        selected.value = Tab.About;
-        break;
-      default:
-        break;
-    }
-  },
-  {
-    immediate: true,
-  },
-);
 </script>
 
 <style lang="scss">
 .the-footer-navigation {
-  height: 52px;
-  font-size: 20px;
+  height: 60px;
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
 
-  #sweep-center {
-    background: var(--q-primary);
-  }
-
-  #sweep-left:before {
-    box-shadow: -40px -40px 0 0 var(--q-primary);
-  }
-  #sweep-right:before {
-    box-shadow: 40px -40px 0 0 var(--q-primary);
-  }
-
-  .btn-container_foreground {
-    border-radius: 10px 10px 0 0;
-    background: var(--q-primary);
-    .btn-container {
-      border-radius: 10px 10px 0 0;
-
-      .active-label {
-        color: var(--q-primary);
-      }
-
-      .btn-title {
-        color: var(--q-primary);
-      }
-    }
+  .q-dark & {
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
   }
 }
 </style>
